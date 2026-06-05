@@ -1,0 +1,71 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto ee0c929026414a07b692cf2cbd06e63a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot gt_app_TB_behav xil_defaultlib.gt_app_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUFDS_GTE2
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=4.0,C...
+Compiling module xil_defaultlib.gt_app_CLOCK_MODULE(MULT=4.0,DIV...
+Compiling module xil_defaultlib.gt_app_GT_USRCLK_SOURCE
+Compiling secureip modules ...
+Compiling module unisims_ver.GTXE2_COMMON(QPLL_FBDIV=10'b0111...
+Compiling module xil_defaultlib.gt_app_common_default
+Compiling module xil_defaultlib.gt_app_common_reset(STABLE_CLOCK...
+Compiling secureip modules ...
+Compiling module unisims_ver.GTXE2_CHANNEL(ALIGN_COMMA_ENABLE...
+Compiling module xil_defaultlib.gt_app_GT(GT_SIM_GTRESET_SPEEDUP...
+Compiling module xil_defaultlib.gt_app_multi_gt(WRAPPER_SIM_GTRE...
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.FD
+Compiling module xil_defaultlib.gt_app_sync_block
+Compiling module xil_defaultlib.gt_app_TX_STARTUP_FSM(STABLE_CLO...
+Compiling module xil_defaultlib.gt_app_init_default
+Compiling module xil_defaultlib.gt_app
+Compiling module xil_defaultlib.gt_app_support
+Compiling module unisims_ver.IBUFDS
+Compiling module xil_defaultlib.gt_app_GT_FRAME_GEN
+Compiling module xil_defaultlib.gt_app_exdes
+Compiling module xil_defaultlib.rx_gt_app_GT_USRCLK_SOURCE
+Compiling secureip modules ...
+Compiling module unisims_ver.GTXE2_COMMON(QPLL_FBDIV=10'b0111...
+Compiling module xil_defaultlib.rx_gt_app_common(SIM_QPLLREFCLK_...
+Compiling module xil_defaultlib.rx_gt_app_common_reset(STABLE_CL...
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.FDSE(INIT=1'b0)
+Compiling module unisims_ver.FDCE_default
+Compiling module xil_defaultlib.rx_gt_app_rx_gt_app_sync_block
+Compiling module xil_defaultlib.rx_gt_app_rx_gt_app_sync_block_0
+Compiling module xil_defaultlib.rx_gt_app_rx_gt_app_sync_block_1
+Compiling module xil_defaultlib.rx_gt_app_rx_gt_app_sync_block_2
+Compiling module xil_defaultlib.rx_gt_app_rx_gt_app_sync_block_3
+Compiling module xil_defaultlib.rx_gt_app_rx_gt_app_sync_block_4
+Compiling module xil_defaultlib.rx_gt_app_rx_gt_app_sync_block_5
+Compiling module unisims_ver.FDSE_default
+Compiling module xil_defaultlib.rx_gt_app_rx_gt_app_RX_STARTUP_F...
+Compiling secureip modules ...
+Compiling module unisims_ver.GTXE2_CHANNEL(ALIGN_COMMA_ENABLE...
+Compiling module xil_defaultlib.rx_gt_app_rx_gt_app_GT
+Compiling module xil_defaultlib.rx_gt_app_rx_gt_app_multi_gt
+Compiling module xil_defaultlib.rx_gt_app_rx_gt_app_init
+Compiling module xil_defaultlib.rx_gt_app
+Compiling module xil_defaultlib.rx_gt_app_support
+Compiling module xil_defaultlib.rx_gt_app_GT_FRAME_CHECK(RX_DATA...
+Compiling module xil_defaultlib.rx_gt_app_exdes
+Compiling module xil_defaultlib.gt_app_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot gt_app_TB_behav

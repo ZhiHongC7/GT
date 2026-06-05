@@ -1,0 +1,87 @@
+# //  ModelSim SE-64 10.7 Dec  7 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do {gt_app_TB_simulate.do}
+# vsim -voptargs=""+acc"" -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm -lib xil_defaultlib xil_defaultlib.gt_app_TB xil_defaultlib.glbl 
+# Start time: 15:39:51 on Jun 03,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "gt_app_RX_STARTUP_FSM(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "gt_app_TX_STARTUP_FSM(fast)".
+# Loading work.gt_app_TB(fast)
+# Loading work.gt_app_exdes(fast)
+# Loading work.gt_app_support(fast)
+# Loading work.gt_app_GT_USRCLK_SOURCE(fast)
+# Loading unisims_ver.IBUFDS_GTE2(fast)
+# Loading work.gt_app_CLOCK_MODULE(fast)
+# Loading unisims_ver.BUFG(fast)
+# Loading unisims_ver.MMCME2_ADV(fast)
+# Loading work.gt_app_common(fast)
+# Loading unisims_ver.GTXE2_COMMON(fast)
+# Loading work.gt_app_common_reset(fast)
+# Loading work.gt_app(fast)
+# Loading work.gt_app_init(fast)
+# Loading work.gt_app_multi_gt(fast)
+# Loading work.gt_app_GT(fast)
+# Loading unisims_ver.GTXE2_CHANNEL(fast)
+# Loading work.gt_app_TX_STARTUP_FSM(fast)
+# Loading work.gt_app_sync_block(fast)
+# Loading unisims_ver.FD(fast)
+# Loading unisims_ver.FDRE(fast)
+# Loading work.gt_app_RX_STARTUP_FSM(fast)
+# Loading unisims_ver.IBUFDS(fast)
+# Loading work.gt_app_GT_FRAME_GEN(fast)
+# Loading work.gt_app_GT_FRAME_CHECK(fast)
+# Loading work.glbl(fast)
+# 1
+# 1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Timing checks are not valid
+# Timing checks are valid
+add wave -position insertpoint sim:/gt_app_TB/gt_app_exdes_i/*
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.gt_app_TB(fast)
+# Loading work.gt_app_exdes(fast)
+# Loading work.gt_app_support(fast)
+# Loading work.gt_app_GT_USRCLK_SOURCE(fast)
+# Loading unisims_ver.IBUFDS_GTE2(fast)
+# Loading work.gt_app_CLOCK_MODULE(fast)
+# Loading unisims_ver.BUFG(fast)
+# Loading unisims_ver.MMCME2_ADV(fast)
+# Loading work.gt_app_common(fast)
+# Loading unisims_ver.GTXE2_COMMON(fast)
+# Loading work.gt_app_common_reset(fast)
+# Loading work.gt_app(fast)
+# Loading work.gt_app_init(fast)
+# Loading work.gt_app_multi_gt(fast)
+# Loading work.gt_app_GT(fast)
+# Loading unisims_ver.GTXE2_CHANNEL(fast)
+# Loading work.gt_app_TX_STARTUP_FSM(fast)
+# Loading work.gt_app_sync_block(fast)
+# Loading unisims_ver.FD(fast)
+# Loading unisims_ver.FDRE(fast)
+# Loading work.gt_app_RX_STARTUP_FSM(fast)
+# Loading unisims_ver.IBUFDS(fast)
+# Loading work.gt_app_GT_FRAME_GEN(fast)
+# Loading work.gt_app_GT_FRAME_CHECK(fast)
+# Loading work.glbl(fast)
+run -continue
+# Timing checks are not valid
+# Timing checks are valid
+run -all
+run -all
+run -all
+# End time: 20:50:13 on Jun 03,2026, Elapsed time: 5:10:22
+# Errors: 0, Warnings: 0

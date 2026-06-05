@@ -1,0 +1,38 @@
+# do {gt_app_TB_compile.do}
+# Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 15:39:46 on Jun 03,2026
+# vlog -64 -incr -work xil_defaultlib ../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app/example_design/gt_app_tx_startup_fsm.v ../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app/example_design/gt_app_rx_startup_fsm.v ../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app_init.v ../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app_gt.v ../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app_multi_gt.v ../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app/example_design/gt_app_sync_block.v ../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app.v ../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_clock_module.v ../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_common.v ../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_common_reset.v ../../../../gt_app_ex.srcs/sources_1/imports/example_design/gt_app_exdes.v ../../../../gt_app_ex.srcs/sources_1/imports/example_design/gt_app_gt_frame_check.v ../../../../gt_app_ex.srcs/sources_1/imports/example_design/gt_app_gt_frame_gen.v ../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_gt_usrclk_source.v ../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_support.v ../../../../gt_app_ex.srcs/sim_1/imports/simulation/gt_app_tb.v 
+# -- Compiling module gt_app_TX_STARTUP_FSM
+# -- Compiling module gt_app_RX_STARTUP_FSM
+# -- Compiling module gt_app_init
+# -- Compiling module gt_app_GT
+# -- Compiling module gt_app_multi_gt
+# -- Compiling module gt_app_sync_block
+# -- Compiling module gt_app
+# -- Compiling module gt_app_CLOCK_MODULE
+# -- Compiling module gt_app_common
+# -- Compiling module gt_app_common_reset
+# -- Compiling module gt_app_exdes
+# -- Compiling module gt_app_GT_FRAME_CHECK
+# -- Compiling module gt_app_GT_FRAME_GEN
+# -- Compiling module gt_app_GT_USRCLK_SOURCE
+# -- Compiling module gt_app_support
+# -- Compiling module gt_app_TB
+# 
+# Top level modules:
+# 	gt_app_TB
+# End time: 15:39:46 on Jun 03,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 15:39:46 on Jun 03,2026
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 15:39:46 on Jun 03,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

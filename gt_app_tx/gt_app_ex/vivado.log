@@ -1,0 +1,1034 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jun  3 20:51:02 2026
+# Process ID: 13324
+# Current directory: c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex
+# Command line: vivado.exe -notrace -source c:/Users/Administrator/Desktop/GT/gt_app/gt_app.srcs/sources_1/ip/gt_app/gt_app_ex.tcl
+# Log file: c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/vivado.log
+# Journal file: c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source c:/Users/Administrator/Desktop/GT/gt_app/gt_app.srcs/sources_1/ip/gt_app/gt_app_ex.tcl -notrace
+INFO: [open_example_project] Creating new example project...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+INFO: [open_example_project] Importing original IP ...
+INFO: [open_example_project] Generating the example project IP ...
+INFO: [open_example_project] Adding example synthesis HDL files ...
+INFO: [open_example_project] Adding example synthesis miscellaneous files ...
+INFO: [open_example_project] Adding example XDC files ...
+INFO: [open_example_project] Adding simulation HDL files ...
+INFO: [open_example_project] Adding simulation miscellaneous files ...
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+INFO: [open_example_project] Sourcing example extension scripts ...
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'gt0_val_tx_refclk' from 'REFCLK1_Q0' to 'REFCLK0_Q0' has been ignored for IP 'rx_gt_app'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'gt0_val_rx_refclk' from 'REFCLK1_Q0' to 'REFCLK0_Q0' has been ignored for IP 'rx_gt_app'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'gt0_val_port_txpolarity' from 'false' to 'true' has been ignored for IP 'rx_gt_app'
+INFO: [Vivado 12-4436] The IP 'rx_gt_app' is already in non-core container format and will not be converted.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'rx_gt_app'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'rx_gt_app'...
+[Wed Jun  3 20:51:18 2026] Launched rx_gt_app_synth_1...
+Run output will be captured here: c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.runs/rx_gt_app_synth_1/runme.log
+[Wed Jun  3 20:51:18 2026] Waiting for rx_gt_app_synth_1 to finish...
+[Wed Jun  3 20:51:23 2026] Waiting for rx_gt_app_synth_1 to finish...
+[Wed Jun  3 20:51:28 2026] Waiting for rx_gt_app_synth_1 to finish...
+[Wed Jun  3 20:51:33 2026] Waiting for rx_gt_app_synth_1 to finish...
+
+*** Running vivado
+    with args -log rx_gt_app.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source rx_gt_app.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source rx_gt_app.tcl -notrace
+Command: synth_design -top rx_gt_app -part xc7k325tffg676-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 22440 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.869 . Memory (MB): peak = 471.465 ; gain = 98.293
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'rx_gt_app' [c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app.v:73]
+INFO: [Synth 8-6157] synthesizing module 'rx_gt_app_init' [c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app_init.v:71]
+	Parameter EXAMPLE_SIM_GTRESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter EXAMPLE_SIMULATION bound to: 0 - type: integer 
+	Parameter STABLE_CLOCK_PERIOD bound to: 10 - type: integer 
+	Parameter EXAMPLE_USE_CHIPSCOPE bound to: 0 - type: integer 
+	Parameter RX_CDRLOCK_TIME bound to: 10000 - type: integer 
+	Parameter WAIT_TIME_CDRLOCK bound to: 1000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rx_gt_app_multi_gt' [c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app_multi_gt.v:70]
+	Parameter WRAPPER_SIM_GTRESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter RX_DFE_KL_CFG2_IN bound to: 806439084 - type: integer 
+	Parameter PMA_RSV_IN bound to: 1994880 - type: integer 
+	Parameter QPLL_FBDIV_TOP bound to: 64 - type: integer 
+	Parameter QPLL_FBDIV_IN bound to: 10'b0011100000 
+	Parameter QPLL_FBDIV_RATIO bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'rx_gt_app_GT' [c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app_gt.v:71]
+	Parameter GT_SIM_GTRESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter RX_DFE_KL_CFG2_IN bound to: 806439084 - type: integer 
+	Parameter SIM_CPLLREFCLK_SEL bound to: 3'b001 
+	Parameter PMA_RSV_IN bound to: 1994880 - type: integer 
+	Parameter PCS_RSVD_ATTR_IN bound to: 48'b000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'GTXE2_CHANNEL' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:11580]
+	Parameter ALIGN_COMMA_DOUBLE bound to: FALSE - type: string 
+	Parameter ALIGN_COMMA_ENABLE bound to: 10'b1111111111 
+	Parameter ALIGN_COMMA_WORD bound to: 1 - type: integer 
+	Parameter ALIGN_MCOMMA_DET bound to: TRUE - type: string 
+	Parameter ALIGN_MCOMMA_VALUE bound to: 10'b1010000011 
+	Parameter ALIGN_PCOMMA_DET bound to: TRUE - type: string 
+	Parameter ALIGN_PCOMMA_VALUE bound to: 10'b0101111100 
+	Parameter CBCC_DATA_SOURCE_SEL bound to: ENCODED - type: string 
+	Parameter CHAN_BOND_KEEP_ALIGN bound to: FALSE - type: string 
+	Parameter CHAN_BOND_MAX_SKEW bound to: 1 - type: integer 
+	Parameter CHAN_BOND_SEQ_1_1 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_2 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_3 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_4 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_ENABLE bound to: 4'b1111 
+	Parameter CHAN_BOND_SEQ_2_1 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_2 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_3 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_4 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_ENABLE bound to: 4'b1111 
+	Parameter CHAN_BOND_SEQ_2_USE bound to: FALSE - type: string 
+	Parameter CHAN_BOND_SEQ_LEN bound to: 1 - type: integer 
+	Parameter CLK_CORRECT_USE bound to: FALSE - type: string 
+	Parameter CLK_COR_KEEP_IDLE bound to: FALSE - type: string 
+	Parameter CLK_COR_MAX_LAT bound to: 19 - type: integer 
+	Parameter CLK_COR_MIN_LAT bound to: 15 - type: integer 
+	Parameter CLK_COR_PRECEDENCE bound to: TRUE - type: string 
+	Parameter CLK_COR_REPEAT_WAIT bound to: 0 - type: integer 
+	Parameter CLK_COR_SEQ_1_1 bound to: 10'b0100000000 
+	Parameter CLK_COR_SEQ_1_2 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_1_3 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_1_4 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_1_ENABLE bound to: 4'b1111 
+	Parameter CLK_COR_SEQ_2_1 bound to: 10'b0100000000 
+	Parameter CLK_COR_SEQ_2_2 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_2_3 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_2_4 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_2_ENABLE bound to: 4'b1111 
+	Parameter CLK_COR_SEQ_2_USE bound to: FALSE - type: string 
+	Parameter CLK_COR_SEQ_LEN bound to: 1 - type: integer 
+	Parameter CPLL_CFG bound to: 24'b101111000000011111011100 
+	Parameter CPLL_FBDIV bound to: 4 - type: integer 
+	Parameter CPLL_FBDIV_45 bound to: 5 - type: integer 
+	Parameter CPLL_INIT_CFG bound to: 24'b000000000000000000011110 
+	Parameter CPLL_LOCK_CFG bound to: 16'b0000000111101000 
+	Parameter CPLL_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter DEC_MCOMMA_DETECT bound to: TRUE - type: string 
+	Parameter DEC_PCOMMA_DETECT bound to: TRUE - type: string 
+	Parameter DEC_VALID_COMMA_ONLY bound to: FALSE - type: string 
+	Parameter DMONITOR_CFG bound to: 24'b000000000000101000000000 
+	Parameter ES_CONTROL bound to: 6'b000000 
+	Parameter ES_ERRDET_EN bound to: FALSE - type: string 
+	Parameter ES_EYE_SCAN_EN bound to: TRUE - type: string 
+	Parameter ES_HORZ_OFFSET bound to: 12'b000000000000 
+	Parameter ES_PMA_CFG bound to: 10'b0000000000 
+	Parameter ES_PRESCALE bound to: 5'b00000 
+	Parameter ES_QUALIFIER bound to: 80'b00000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ES_QUAL_MASK bound to: 80'b00000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ES_SDATA_MASK bound to: 80'b00000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ES_VERT_OFFSET bound to: 9'b000000000 
+	Parameter FTS_DESKEW_SEQ_ENABLE bound to: 4'b1111 
+	Parameter FTS_LANE_DESKEW_CFG bound to: 4'b1111 
+	Parameter FTS_LANE_DESKEW_EN bound to: FALSE - type: string 
+	Parameter GEARBOX_MODE bound to: 3'b000 
+	Parameter IS_CPLLLOCKDETCLK_INVERTED bound to: 1'b0 
+	Parameter IS_DRPCLK_INVERTED bound to: 1'b0 
+	Parameter IS_GTGREFCLK_INVERTED bound to: 1'b0 
+	Parameter IS_RXUSRCLK2_INVERTED bound to: 1'b0 
+	Parameter IS_RXUSRCLK_INVERTED bound to: 1'b0 
+	Parameter IS_TXPHDLYTSTCLK_INVERTED bound to: 1'b0 
+	Parameter IS_TXUSRCLK2_INVERTED bound to: 1'b0 
+	Parameter IS_TXUSRCLK_INVERTED bound to: 1'b0 
+	Parameter OUTREFCLK_SEL_INV bound to: 2'b11 
+	Parameter PCS_PCIE_EN bound to: FALSE - type: string 
+	Parameter PCS_RSVD_ATTR bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter PD_TRANS_TIME_FROM_P2 bound to: 12'b000000111100 
+	Parameter PD_TRANS_TIME_NONE_P2 bound to: 8'b00111100 
+	Parameter PD_TRANS_TIME_TO_P2 bound to: 8'b01100100 
+	Parameter PMA_RSV bound to: 1994880 - type: integer 
+	Parameter PMA_RSV2 bound to: 16'b0010000001010000 
+	Parameter PMA_RSV3 bound to: 2'b00 
+	Parameter PMA_RSV4 bound to: 0 - type: integer 
+	Parameter RXBUFRESET_TIME bound to: 5'b00001 
+	Parameter RXBUF_ADDR_MODE bound to: FAST - type: string 
+	Parameter RXBUF_EIDLE_HI_CNT bound to: 4'b1000 
+	Parameter RXBUF_EIDLE_LO_CNT bound to: 4'b0000 
+	Parameter RXBUF_EN bound to: TRUE - type: string 
+	Parameter RXBUF_RESET_ON_CB_CHANGE bound to: TRUE - type: string 
+	Parameter RXBUF_RESET_ON_COMMAALIGN bound to: FALSE - type: string 
+	Parameter RXBUF_RESET_ON_EIDLE bound to: FALSE - type: string 
+	Parameter RXBUF_RESET_ON_RATE_CHANGE bound to: TRUE - type: string 
+	Parameter RXBUF_THRESH_OVFLW bound to: 61 - type: integer 
+	Parameter RXBUF_THRESH_OVRD bound to: FALSE - type: string 
+	Parameter RXBUF_THRESH_UNDFLW bound to: 4 - type: integer 
+	Parameter RXCDRFREQRESET_TIME bound to: 5'b00001 
+	Parameter RXCDRPHRESET_TIME bound to: 5'b00001 
+	Parameter RXCDR_CFG bound to: 72'b000010110000000000000000001000111111111100010000010000000000000000100000 
+	Parameter RXCDR_FR_RESET_ON_EIDLE bound to: 1'b0 
+	Parameter RXCDR_HOLD_DURING_EIDLE bound to: 1'b0 
+	Parameter RXCDR_LOCK_CFG bound to: 6'b010101 
+	Parameter RXCDR_PH_RESET_ON_EIDLE bound to: 1'b0 
+	Parameter RXDFELPMRESET_TIME bound to: 7'b0001111 
+	Parameter RXDLY_CFG bound to: 16'b0000000000011111 
+	Parameter RXDLY_LCFG bound to: 9'b000110000 
+	Parameter RXDLY_TAP_CFG bound to: 16'b0000000000000000 
+	Parameter RXGEARBOX_EN bound to: FALSE - type: string 
+	Parameter RXISCANRESET_TIME bound to: 5'b00001 
+	Parameter RXLPM_HF_CFG bound to: 14'b00000011110000 
+	Parameter RXLPM_LF_CFG bound to: 14'b00000011110000 
+	Parameter RXOOB_CFG bound to: 7'b0000110 
+	Parameter RXOUT_DIV bound to: 1 - type: integer 
+	Parameter RXPCSRESET_TIME bound to: 5'b00001 
+	Parameter RXPHDLY_CFG bound to: 24'b000010000100000000100000 
+	Parameter RXPH_CFG bound to: 24'b000000000000000000000000 
+	Parameter RXPH_MONITOR_SEL bound to: 5'b00000 
+	Parameter RXPMARESET_TIME bound to: 5'b00011 
+	Parameter RXPRBS_ERR_LOOPBACK bound to: 1'b0 
+	Parameter RXSLIDE_AUTO_WAIT bound to: 7 - type: integer 
+	Parameter RXSLIDE_MODE bound to: PCS - type: string 
+	Parameter RX_BIAS_CFG bound to: 12'b000000000100 
+	Parameter RX_BUFFER_CFG bound to: 6'b000000 
+	Parameter RX_CLK25_DIV bound to: 7 - type: integer 
+	Parameter RX_CLKMUX_PD bound to: 1'b1 
+	Parameter RX_CM_SEL bound to: 2'b11 
+	Parameter RX_CM_TRIM bound to: 3'b010 
+	Parameter RX_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter RX_DDI_SEL bound to: 6'b000000 
+	Parameter RX_DEBUG_CFG bound to: 12'b000000000000 
+	Parameter RX_DEFER_RESET_BUF_EN bound to: TRUE - type: string 
+	Parameter RX_DFE_GAIN_CFG bound to: 23'b00000100000111111101010 
+	Parameter RX_DFE_H2_CFG bound to: 12'b000000000000 
+	Parameter RX_DFE_H3_CFG bound to: 12'b000001000000 
+	Parameter RX_DFE_H4_CFG bound to: 11'b00011110000 
+	Parameter RX_DFE_H5_CFG bound to: 11'b00011100000 
+	Parameter RX_DFE_KL_CFG bound to: 13'b0000011111110 
+	Parameter RX_DFE_KL_CFG2 bound to: 806439084 - type: integer 
+	Parameter RX_DFE_LPM_CFG bound to: 16'b0000100101010100 
+	Parameter RX_DFE_LPM_HOLD_DURING_EIDLE bound to: 1'b0 
+	Parameter RX_DFE_UT_CFG bound to: 17'b10001111000000000 
+	Parameter RX_DFE_VP_CFG bound to: 17'b00011111100000011 
+	Parameter RX_DFE_XYD_CFG bound to: 13'b0000000000000 
+	Parameter RX_DISPERR_SEQ_MATCH bound to: FALSE - type: string 
+	Parameter RX_INT_DATAWIDTH bound to: 1 - type: integer 
+	Parameter RX_OS_CFG bound to: 13'b0000010000000 
+	Parameter RX_SIG_VALID_DLY bound to: 10 - type: integer 
+	Parameter RX_XCLK_SEL bound to: RXREC - type: string 
+	Parameter SAS_MAX_COM bound to: 64 - type: integer 
+	Parameter SAS_MIN_COM bound to: 36 - type: integer 
+	Parameter SATA_BURST_SEQ_LEN bound to: 4'b0101 
+	Parameter SATA_BURST_VAL bound to: 3'b100 
+	Parameter SATA_CPLL_CFG bound to: VCO_3000MHZ - type: string 
+	Parameter SATA_EIDLE_VAL bound to: 3'b100 
+	Parameter SATA_MAX_BURST bound to: 8 - type: integer 
+	Parameter SATA_MAX_INIT bound to: 21 - type: integer 
+	Parameter SATA_MAX_WAKE bound to: 7 - type: integer 
+	Parameter SATA_MIN_BURST bound to: 4 - type: integer 
+	Parameter SATA_MIN_INIT bound to: 12 - type: integer 
+	Parameter SATA_MIN_WAKE bound to: 4 - type: integer 
+	Parameter SHOW_REALIGN_COMMA bound to: FALSE - type: string 
+	Parameter SIM_CPLLREFCLK_SEL bound to: 3'b001 
+	Parameter SIM_RECEIVER_DETECT_PASS bound to: TRUE - type: string 
+	Parameter SIM_RESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter SIM_TX_EIDLE_DRIVE_LEVEL bound to: X - type: string 
+	Parameter SIM_VERSION bound to: 4.0 - type: string 
+	Parameter TERM_RCAL_CFG bound to: 5'b10000 
+	Parameter TERM_RCAL_OVRD bound to: 1'b0 
+	Parameter TRANS_TIME_RATE bound to: 8'b00001110 
+	Parameter TST_RSV bound to: 0 - type: integer 
+	Parameter TXBUF_EN bound to: TRUE - type: string 
+	Parameter TXBUF_RESET_ON_RATE_CHANGE bound to: TRUE - type: string 
+	Parameter TXDLY_CFG bound to: 16'b0000000000011111 
+	Parameter TXDLY_LCFG bound to: 9'b000110000 
+	Parameter TXDLY_TAP_CFG bound to: 16'b0000000000000000 
+	Parameter TXGEARBOX_EN bound to: FALSE - type: string 
+	Parameter TXOUT_DIV bound to: 1 - type: integer 
+	Parameter TXPCSRESET_TIME bound to: 5'b00001 
+	Parameter TXPHDLY_CFG bound to: 24'b000010000100000000100000 
+	Parameter TXPH_CFG bound to: 16'b0000011110000000 
+	Parameter TXPH_MONITOR_SEL bound to: 5'b00000 
+	Parameter TXPMARESET_TIME bound to: 5'b00001 
+	Parameter TX_CLK25_DIV bound to: 7 - type: integer 
+	Parameter TX_CLKMUX_PD bound to: 1'b1 
+	Parameter TX_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter TX_DEEMPH0 bound to: 5'b00000 
+	Parameter TX_DEEMPH1 bound to: 5'b00000 
+	Parameter TX_DRIVE_MODE bound to: DIRECT - type: string 
+	Parameter TX_EIDLE_ASSERT_DELAY bound to: 3'b110 
+	Parameter TX_EIDLE_DEASSERT_DELAY bound to: 3'b100 
+	Parameter TX_INT_DATAWIDTH bound to: 1 - type: integer 
+	Parameter TX_LOOPBACK_DRIVE_HIZ bound to: FALSE - type: string 
+	Parameter TX_MAINCURSOR_SEL bound to: 1'b0 
+	Parameter TX_MARGIN_FULL_0 bound to: 7'b1001110 
+	Parameter TX_MARGIN_FULL_1 bound to: 7'b1001001 
+	Parameter TX_MARGIN_FULL_2 bound to: 7'b1000101 
+	Parameter TX_MARGIN_FULL_3 bound to: 7'b1000010 
+	Parameter TX_MARGIN_FULL_4 bound to: 7'b1000000 
+	Parameter TX_MARGIN_LOW_0 bound to: 7'b1000110 
+	Parameter TX_MARGIN_LOW_1 bound to: 7'b1000100 
+	Parameter TX_MARGIN_LOW_2 bound to: 7'b1000010 
+	Parameter TX_MARGIN_LOW_3 bound to: 7'b1000000 
+	Parameter TX_MARGIN_LOW_4 bound to: 7'b1000000 
+	Parameter TX_PREDRIVER_MODE bound to: 1'b0 
+	Parameter TX_QPI_STATUS_EN bound to: 1'b0 
+	Parameter TX_RXDETECT_CFG bound to: 14'b01100000110010 
+	Parameter TX_RXDETECT_REF bound to: 3'b100 
+	Parameter TX_XCLK_SEL bound to: TXOUT - type: string 
+	Parameter UCODEER_CLR bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'GTXE2_CHANNEL' (1#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:11580]
+INFO: [Synth 8-6155] done synthesizing module 'rx_gt_app_GT' (2#1) [c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app_gt.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'rx_gt_app_multi_gt' (3#1) [c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app_multi_gt.v:70]
+INFO: [Synth 8-6157] synthesizing module 'rx_gt_app_RX_STARTUP_FSM' [c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/rx_gt_app_rx_startup_fsm.v:94]
+	Parameter EXAMPLE_SIMULATION bound to: 0 - type: integer 
+	Parameter EQ_MODE bound to: DFE - type: string 
+	Parameter STABLE_CLOCK_PERIOD bound to: 10 - type: integer 
+	Parameter RETRY_COUNTER_BITWIDTH bound to: 8 - type: integer 
+	Parameter TX_QPLL_USED bound to: FALSE - type: string 
+	Parameter RX_QPLL_USED bound to: TRUE - type: string 
+	Parameter PHASE_ALIGNMENT_MANUAL bound to: FALSE - type: string 
+	Parameter INIT bound to: 4'b0000 
+	Parameter ASSERT_ALL_RESETS bound to: 4'b0001 
+	Parameter WAIT_FOR_PLL_LOCK bound to: 4'b0010 
+	Parameter RELEASE_PLL_RESET bound to: 4'b0011 
+	Parameter VERIFY_RECCLK_STABLE bound to: 4'b0100 
+	Parameter RELEASE_MMCM_RESET bound to: 4'b0101 
+	Parameter WAIT_FOR_RXUSRCLK bound to: 4'b0110 
+	Parameter WAIT_RESET_DONE bound to: 4'b0111 
+	Parameter DO_PHASE_ALIGNMENT bound to: 4'b1000 
+	Parameter MONITOR_DATA_VALID bound to: 4'b1001 
+	Parameter FSM_DONE bound to: 4'b1010 
+	Parameter MMCM_LOCK_CNT_MAX bound to: 256 - type: integer 
+	Parameter STARTUP_DELAY bound to: 500 - type: integer 
+	Parameter WAIT_CYCLES bound to: 50 - type: integer 
+	Parameter WAIT_MAX bound to: 60 - type: integer 
+	Parameter WAIT_TIMEOUT_2ms bound to: 200000 - type: integer 
+	Parameter WAIT_TLOCK_MAX bound to: 10000 - type: integer 
+	Parameter WAIT_TIMEOUT_500us bound to: 50000 - type: integer 
+	Parameter WAIT_TIMEOUT_1us bound to: 100 - type: integer 
+	Parameter WAIT_TIMEOUT_100us bound to: 10000 - type: integer 
+	Parameter WAIT_TIME_ADAPT bound to: 370000 - type: integer 
+	Parameter WAIT_TIME_MAX bound to: 1000 - type: integer 
+	Parameter PORT_WIDTH bound to: 18 - type: integer 
+	Parameter MAX_RETRIES bound to: 255 - type: integer 
+	Parameter MAX_WAIT_BYPASS bound to: 5000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rx_gt_app_sync_block' [c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/rx_gt_app_sync_block.v:78]
+	Parameter INITIALISE bound to: 6'b000000 
+INFO: [Synth 8-6157] synthesizing module 'FD' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3730]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FD' (4#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3730]
+INFO: [Synth 8-6155] done synthesizing module 'rx_gt_app_sync_block' (5#1) [c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/rx_gt_app_sync_block.v:78]
+WARNING: [Synth 8-6014] Unused sequential element time_out_500us_reg was removed.  [c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/rx_gt_app_rx_startup_fsm.v:352]
+INFO: [Synth 8-6155] done synthesizing module 'rx_gt_app_RX_STARTUP_FSM' (6#1) [c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/rx_gt_app_rx_startup_fsm.v:94]
+WARNING: [Synth 8-3848] Net gt0_tx_fsm_reset_done_out in module/entity rx_gt_app_init does not have driver. [c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app_init.v:83]
+INFO: [Synth 8-6155] done synthesizing module 'rx_gt_app_init' (7#1) [c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app_init.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'rx_gt_app' (8#1) [c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app.v:73]
+WARNING: [Synth 8-3331] design rx_gt_app_RX_STARTUP_FSM has unconnected port CPLLREFCLKLOST
+WARNING: [Synth 8-3331] design rx_gt_app_init has unconnected port gt0_tx_fsm_reset_done_out
+WARNING: [Synth 8-3331] design rx_gt_app_init has unconnected port gt0_rxuserrdy_in
+WARNING: [Synth 8-3331] design rx_gt_app_init has unconnected port gt0_gtrxreset_in
+WARNING: [Synth 8-3331] design rx_gt_app_init has unconnected port gt0_gttxreset_in
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 527.285 ; gain = 154.113
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 527.285 ; gain = 154.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 527.285 ; gain = 154.113
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 48 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7k325tffg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.runs/rx_gt_app_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.runs/rx_gt_app_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 907.281 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 48 instances were transformed.
+  FD => FDRE: 48 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 907.281 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 908.578 ; gain = 1.297
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 908.578 ; gain = 535.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 908.578 ; gain = 535.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.runs/rx_gt_app_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 908.578 ; gain = 535.406
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'RXDFELFHOLD_reg' into 'RXDFEAGCHOLD_reg' [c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/rx_gt_app_rx_startup_fsm.v:558]
+INFO: [Synth 8-4471] merging register 'RXLPMHFHOLD_reg' into 'RXLPMLFHOLD_reg' [c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/rx_gt_app_rx_startup_fsm.v:560]
+INFO: [Synth 8-4471] merging register 'recclk_mon_count_reset_reg' into 'adapt_count_reset_reg' [c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/rx_gt_app_rx_startup_fsm.v:555]
+INFO: [Synth 8-802] inferred FSM for state register 'rx_state_reg' in module 'rx_gt_app_RX_STARTUP_FSM'
+INFO: [Synth 8-5545] ROM "adapt_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "time_out_adapt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "init_wait_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "init_wait_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "time_out_counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "time_out_2ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "time_out_1us" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "time_out_100us" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "wait_bypass_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "time_out_wait_bypass" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "retry_counter_int" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gtrxreset_i" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mmcm_reset_i" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "QPLL_RESET" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "run_phase_alignment_int" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "gt0_rx_cdrlocked" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gt0_rx_cdrlock_counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                             0000 |                             0000
+       ASSERT_ALL_RESETS |                             0001 |                             0001
+       WAIT_FOR_PLL_LOCK |                             0010 |                             0010
+       RELEASE_PLL_RESET |                             0011 |                             0011
+    VERIFY_RECCLK_STABLE |                             0100 |                             0100
+      RELEASE_MMCM_RESET |                             0101 |                             0101
+       WAIT_FOR_RXUSRCLK |                             0110 |                             0110
+         WAIT_RESET_DONE |                             0111 |                             0111
+      DO_PHASE_ALIGNMENT |                             1000 |                             1000
+      MONITOR_DATA_VALID |                             1001 |                             1001
+                FSM_DONE |                             1010 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_state_reg' using encoding 'sequential' in module 'rx_gt_app_RX_STARTUP_FSM'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 908.578 ; gain = 535.406
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 27    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 23    
+	  11 Input      1 Bit        Muxes := 22    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module rx_gt_app_RX_STARTUP_FSM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 26    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 22    
+	  11 Input      1 Bit        Muxes := 22    
+Module rx_gt_app_init 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "gt0_rxresetfsm_i/retry_counter_int" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gt0_rxresetfsm_i/rx_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "gt0_rxresetfsm_i/init_wait_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gt0_rxresetfsm_i/init_wait_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gt0_rxresetfsm_i/time_out_counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gt0_rxresetfsm_i/time_out_2ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gt0_rxresetfsm_i/time_out_100us" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gt0_rxresetfsm_i/time_out_1us" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "gt0_rxresetfsm_i/adapt_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gt0_rxresetfsm_i/time_out_adapt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "gt0_rxresetfsm_i/wait_bypass_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gt0_rxresetfsm_i/time_out_wait_bypass" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "gt0_rx_cdrlock_counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gt0_rx_cdrlocked" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design rx_gt_app_init has unconnected port gt0_tx_fsm_reset_done_out
+WARNING: [Synth 8-3331] design rx_gt_app_init has unconnected port gt0_rxuserrdy_in
+WARNING: [Synth 8-3331] design rx_gt_app_init has unconnected port gt0_gtrxreset_in
+WARNING: [Synth 8-3331] design rx_gt_app_init has unconnected port gt0_gttxreset_in
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\gt0_rxresetfsm_i/recclk_mon_restart_count_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\gt0_rxresetfsm_i/recclk_mon_restart_count_reg[1] )
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_cplllock/data_sync_reg1) is unused and will be removed from module rx_gt_app_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_cplllock/data_sync_reg2) is unused and will be removed from module rx_gt_app_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_cplllock/data_sync_reg3) is unused and will be removed from module rx_gt_app_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_cplllock/data_sync_reg4) is unused and will be removed from module rx_gt_app_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_cplllock/data_sync_reg5) is unused and will be removed from module rx_gt_app_init.
+INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_cplllock/data_sync_reg6) is unused and will be removed from module rx_gt_app_init.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 908.578 ; gain = 535.406
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 908.578 ; gain = 535.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 930.047 ; gain = 556.875
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 932.168 ; gain = 558.996
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 932.168 ; gain = 558.996
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 932.168 ; gain = 558.996
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 932.168 ; gain = 558.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 932.168 ; gain = 558.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 932.168 ; gain = 558.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 932.168 ; gain = 558.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |CARRY4        |    29|
+|2     |GTXE2_CHANNEL |     1|
+|3     |LUT1          |    24|
+|4     |LUT2          |    13|
+|5     |LUT3          |    11|
+|6     |LUT4          |    27|
+|7     |LUT5          |    57|
+|8     |LUT6          |    34|
+|9     |FD            |    42|
+|10    |FDCE          |     9|
+|11    |FDRE          |   137|
+|12    |FDSE          |     8|
++------+--------------+------+
+
+Report Instance Areas: 
++------+-----------------------------------+-------------------------+------+
+|      |Instance                           |Module                   |Cells |
++------+-----------------------------------+-------------------------+------+
+|1     |top                                |                         |   392|
+|2     |  inst                             |rx_gt_app_init           |   392|
+|3     |    gt0_rxresetfsm_i               |rx_gt_app_RX_STARTUP_FSM |   309|
+|4     |      sync_RXRESETDONE             |rx_gt_app_sync_block     |     6|
+|5     |      sync_data_valid              |rx_gt_app_sync_block_0   |    22|
+|6     |      sync_mmcm_lock_reclocked     |rx_gt_app_sync_block_1   |     8|
+|7     |      sync_qplllock                |rx_gt_app_sync_block_2   |    10|
+|8     |      sync_run_phase_alignment_int |rx_gt_app_sync_block_3   |     6|
+|9     |      sync_rx_fsm_reset_done_int   |rx_gt_app_sync_block_4   |     6|
+|10    |      sync_time_out_wait_bypass    |rx_gt_app_sync_block_5   |     6|
+|11    |    rx_gt_app_i                    |rx_gt_app_multi_gt       |     1|
+|12    |      gt0_rx_gt_app_i              |rx_gt_app_GT             |     1|
++------+-----------------------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 932.168 ; gain = 558.996
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 932.168 ; gain = 177.703
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 932.168 ; gain = 558.996
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 71 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 938.578 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 42 instances were transformed.
+  FD => FDRE: 42 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+79 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 938.578 ; gain = 576.938
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 938.578 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.runs/rx_gt_app_synth_1/rx_gt_app.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP rx_gt_app, cache-ID = 2aa9ec3083f07569
+INFO: [Coretcl 2-1174] Renamed 11 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 938.578 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.runs/rx_gt_app_synth_1/rx_gt_app.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file rx_gt_app_utilization_synth.rpt -pb rx_gt_app_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jun  3 20:51:34 2026...
+[Wed Jun  3 20:51:38 2026] rx_gt_app_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:20 . Memory (MB): peak = 889.820 ; gain = 0.000
+WARNING: [Vivado 12-4105] The example target will be deprecated in a future release. Instead, use open_example_project command to get the example design.
+INFO: [IP_Flow 19-1686] Generating 'Examples' target for IP 'rx_gt_app'...
+WARNING: [Vivado 12-818] No files matched 'rx_gt_app_clock_module.v'
+INFO: [Project 1-386] Moving file 'c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app.xci' from fileset 'rx_gt_app' to fileset 'sources_1'.
+INFO: [open_example_project] Rebuilding all the top level IPs ...
+INFO: [exportsim-Tcl-35] Exporting simulation files for "XSIM" (Xilinx Vivado Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.ip_user_files/sim_scripts/gt_app/xsim/gt_app.sh'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.ip_user_files/sim_scripts/gt_app/xsim/v7ht.tcl'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "MODELSIM" (Mentor Graphics ModelSim Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.ip_user_files/sim_scripts/gt_app/modelsim/gt_app.sh'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.ip_user_files/sim_scripts/gt_app/modelsim/v7ht.tcl'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "QUESTA" (Mentor Graphics Questa Advanced Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.ip_user_files/sim_scripts/gt_app/questa/gt_app.sh'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.ip_user_files/sim_scripts/gt_app/questa/v7ht.tcl'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "IES" (Cadence Incisive Enterprise Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.ip_user_files/sim_scripts/gt_app/ies/gt_app.sh'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.ip_user_files/sim_scripts/gt_app/ies/v7ht.tcl'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "VCS" (Synopsys Verilog Compiler Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.ip_user_files/sim_scripts/gt_app/vcs/gt_app.sh'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.ip_user_files/sim_scripts/gt_app/vcs/v7ht.tcl'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "RIVIERA" (Aldec Riviera-PRO Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.ip_user_files/sim_scripts/gt_app/riviera/gt_app.sh'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.ip_user_files/sim_scripts/gt_app/riviera/v7ht.tcl'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "ACTIVEHDL" (Aldec Active-HDL Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.ip_user_files/sim_scripts/gt_app/activehdl/gt_app.sh'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.ip_user_files/sim_scripts/gt_app/activehdl/v7ht.tcl'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "XCELIUM" (Cadence Xcelium Parallel Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.ip_user_files/sim_scripts/gt_app/xcelium/gt_app.sh'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.ip_user_files/sim_scripts/gt_app/xcelium/v7ht.tcl'
+INFO: [open_example_project] Open Example Project completed
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'gt_app_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.sim/sim_1/behav/xsim/gt_rom_init_tx.dat'
+INFO: [SIM-utils-43] Exported 'c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.sim/sim_1/behav/xsim/gt_rom_init_tx.dat'
+INFO: [SIM-utils-43] Exported 'c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.sim/sim_1/behav/xsim/gt_rom_init_rx.dat'
+INFO: [SIM-utils-43] Exported 'c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.sim/sim_1/behav/xsim/gt_rom_init_tx.dat'
+INFO: [SIM-utils-43] Exported 'c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.sim/sim_1/behav/xsim/gt_rom_init_rx.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj gt_app_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/gt_app/gt_app/example_design/gt_app_tx_startup_fsm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gt_app_TX_STARTUP_FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/gt_app/gt_app/example_design/gt_app_rx_startup_fsm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gt_app_RX_STARTUP_FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/gt_app/gt_app_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gt_app_init
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/gt_app/gt_app_gt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gt_app_GT
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/gt_app/gt_app_multi_gt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gt_app_multi_gt
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/gt_app/gt_app/example_design/gt_app_sync_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gt_app_sync_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/gt_app/gt_app.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gt_app
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_clock_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gt_app_CLOCK_MODULE
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_common.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gt_app_common
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_common_reset.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gt_app_common_reset
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/imports/example_design/gt_app_exdes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gt_app_exdes
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/imports/example_design/gt_app_gt_frame_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gt_app_GT_FRAME_GEN
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_gt_usrclk_source.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gt_app_GT_USRCLK_SOURCE
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_support.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gt_app_support
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/support/rx_gt_app_common.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rx_gt_app_common
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/support/rx_gt_app_common_reset.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rx_gt_app_common_reset
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/rx_gt_app_exdes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rx_gt_app_exdes
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/rx_gt_app_gt_frame_check.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rx_gt_app_GT_FRAME_CHECK
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/support/rx_gt_app_gt_usrclk_source.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rx_gt_app_GT_USRCLK_SOURCE
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rx_gt_app
+INFO: [VRFC 10-311] analyzing module rx_gt_app_rx_gt_app_GT
+INFO: [VRFC 10-311] analyzing module rx_gt_app_rx_gt_app_RX_STARTUP_FSM
+INFO: [VRFC 10-311] analyzing module rx_gt_app_rx_gt_app_init
+INFO: [VRFC 10-311] analyzing module rx_gt_app_rx_gt_app_multi_gt
+INFO: [VRFC 10-311] analyzing module rx_gt_app_rx_gt_app_sync_block
+INFO: [VRFC 10-311] analyzing module rx_gt_app_rx_gt_app_sync_block_0
+INFO: [VRFC 10-311] analyzing module rx_gt_app_rx_gt_app_sync_block_1
+INFO: [VRFC 10-311] analyzing module rx_gt_app_rx_gt_app_sync_block_2
+INFO: [VRFC 10-311] analyzing module rx_gt_app_rx_gt_app_sync_block_3
+INFO: [VRFC 10-311] analyzing module rx_gt_app_rx_gt_app_sync_block_4
+INFO: [VRFC 10-311] analyzing module rx_gt_app_rx_gt_app_sync_block_5
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/support/rx_gt_app_support.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rx_gt_app_support
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sim_1/imports/simulation/gt_app_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gt_app_TB
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'glbl' [c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.sim/sim_1/behav/xsim/glbl.v:6]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto ee0c929026414a07b692cf2cbd06e63a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot gt_app_TB_behav xil_defaultlib.gt_app_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUFDS_GTE2
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=4.0,C...
+Compiling module xil_defaultlib.gt_app_CLOCK_MODULE(MULT=4.0,DIV...
+Compiling module xil_defaultlib.gt_app_GT_USRCLK_SOURCE
+Compiling secureip modules ...
+Compiling module unisims_ver.GTXE2_COMMON(QPLL_FBDIV=10'b0111...
+Compiling module xil_defaultlib.gt_app_common_default
+Compiling module xil_defaultlib.gt_app_common_reset(STABLE_CLOCK...
+Compiling secureip modules ...
+Compiling module unisims_ver.GTXE2_CHANNEL(ALIGN_COMMA_ENABLE...
+Compiling module xil_defaultlib.gt_app_GT(GT_SIM_GTRESET_SPEEDUP...
+Compiling module xil_defaultlib.gt_app_multi_gt(WRAPPER_SIM_GTRE...
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.FD
+Compiling module xil_defaultlib.gt_app_sync_block
+Compiling module xil_defaultlib.gt_app_TX_STARTUP_FSM(STABLE_CLO...
+Compiling module xil_defaultlib.gt_app_init_default
+Compiling module xil_defaultlib.gt_app
+Compiling module xil_defaultlib.gt_app_support
+Compiling module unisims_ver.IBUFDS
+Compiling module xil_defaultlib.gt_app_GT_FRAME_GEN
+Compiling module xil_defaultlib.gt_app_exdes
+Compiling module xil_defaultlib.rx_gt_app_GT_USRCLK_SOURCE
+Compiling secureip modules ...
+Compiling module unisims_ver.GTXE2_COMMON(QPLL_FBDIV=10'b0111...
+Compiling module xil_defaultlib.rx_gt_app_common(SIM_QPLLREFCLK_...
+Compiling module xil_defaultlib.rx_gt_app_common_reset(STABLE_CL...
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.FDSE(INIT=1'b0)
+Compiling module unisims_ver.FDCE_default
+Compiling module xil_defaultlib.rx_gt_app_rx_gt_app_sync_block
+Compiling module xil_defaultlib.rx_gt_app_rx_gt_app_sync_block_0
+Compiling module xil_defaultlib.rx_gt_app_rx_gt_app_sync_block_1
+Compiling module xil_defaultlib.rx_gt_app_rx_gt_app_sync_block_2
+Compiling module xil_defaultlib.rx_gt_app_rx_gt_app_sync_block_3
+Compiling module xil_defaultlib.rx_gt_app_rx_gt_app_sync_block_4
+Compiling module xil_defaultlib.rx_gt_app_rx_gt_app_sync_block_5
+Compiling module unisims_ver.FDSE_default
+Compiling module xil_defaultlib.rx_gt_app_rx_gt_app_RX_STARTUP_F...
+Compiling secureip modules ...
+Compiling module unisims_ver.GTXE2_CHANNEL(ALIGN_COMMA_ENABLE...
+Compiling module xil_defaultlib.rx_gt_app_rx_gt_app_GT
+Compiling module xil_defaultlib.rx_gt_app_rx_gt_app_multi_gt
+Compiling module xil_defaultlib.rx_gt_app_rx_gt_app_init
+Compiling module xil_defaultlib.rx_gt_app
+Compiling module xil_defaultlib.rx_gt_app_support
+Compiling module xil_defaultlib.rx_gt_app_GT_FRAME_CHECK(RX_DATA...
+Compiling module xil_defaultlib.rx_gt_app_exdes
+Compiling module xil_defaultlib.gt_app_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot gt_app_TB_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.sim/sim_1/behav/xsim/xsim.dir/gt_app_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun  3 20:53:14 2026...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:30 . Memory (MB): peak = 893.535 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '30' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "gt_app_TB_behav -key {Behavioral:sim_1:Functional:gt_app_TB} -tclbatch {gt_app_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source gt_app_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Timing checks are not valid
+Timing checks are valid
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'gt_app_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:36 . Memory (MB): peak = 978.102 ; gain = 84.566
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property target_simulator ModelSim [current_project]
+launch_simulation -install_path C:/modeltech64_10.7/win64
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'ModelSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.sim/sim_1/behav/modelsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'C:/modeltech64_10.7/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'C:/intelFPGA/20.1/modelsim_ase/vivado_lib/modelsim.ini' copied to run dir:'c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'gt_app_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.sim/sim_1/behav/modelsim/gt_rom_init_tx.dat'
+INFO: [SIM-utils-43] Exported 'c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.sim/sim_1/behav/modelsim/gt_rom_init_tx.dat'
+INFO: [SIM-utils-43] Exported 'c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.sim/sim_1/behav/modelsim/gt_rom_init_rx.dat'
+INFO: [SIM-utils-43] Exported 'c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.sim/sim_1/behav/modelsim/gt_rom_init_tx.dat'
+INFO: [SIM-utils-43] Exported 'c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.sim/sim_1/behav/modelsim/gt_rom_init_rx.dat'
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.sim/sim_1/behav/modelsim'
+Reading C:/modeltech64_10.7/tcl/vsim/pref.tcl
+
+# 10.7
+
+# do {gt_app_TB_compile.do}
+# Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 20:54:31 on Jun 03,2026
+# vlog -64 -incr -work xil_defaultlib ../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app/example_design/gt_app_tx_startup_fsm.v ../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app/example_design/gt_app_rx_startup_fsm.v ../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app_init.v ../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app_gt.v ../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app_multi_gt.v ../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app/example_design/gt_app_sync_block.v ../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app.v ../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_clock_module.v ../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_common.v ../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_common_reset.v ../../../../gt_app_ex.srcs/sources_1/imports/example_design/gt_app_exdes.v ../../../../gt_app_ex.srcs/sources_1/imports/example_design/gt_app_gt_frame_gen.v ../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_gt_usrclk_source.v ../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_support.v ../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/support/rx_gt_app_common.v ../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/support/rx_gt_app_common_reset.v ../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/rx_gt_app_exdes.v ../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/rx_gt_app_gt_frame_check.v ../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/support/rx_gt_app_gt_usrclk_source.v ../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app_sim_netlist.v ../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/support/rx_gt_app_support.v ../../../../gt_app_ex.srcs/sim_1/imports/simulation/gt_app_tb.v 
+# -- Compiling module gt_app_TX_STARTUP_FSM
+# -- Compiling module gt_app_RX_STARTUP_FSM
+# -- Compiling module gt_app_init
+# -- Compiling module gt_app_GT
+# -- Compiling module gt_app_multi_gt
+# -- Compiling module gt_app_sync_block
+# -- Compiling module gt_app
+# -- Compiling module gt_app_CLOCK_MODULE
+# -- Compiling module gt_app_common
+# -- Compiling module gt_app_common_reset
+# -- Compiling module gt_app_exdes
+# -- Compiling module gt_app_GT_FRAME_GEN
+# -- Compiling module gt_app_GT_USRCLK_SOURCE
+# -- Compiling module gt_app_support
+# -- Compiling module rx_gt_app_common
+# -- Compiling module rx_gt_app_common_reset
+# -- Compiling module rx_gt_app_exdes
+# -- Compiling module rx_gt_app_GT_FRAME_CHECK
+# -- Compiling module rx_gt_app_GT_USRCLK_SOURCE
+# -- Compiling module rx_gt_app
+# -- Compiling module rx_gt_app_rx_gt_app_GT
+# -- Compiling module rx_gt_app_rx_gt_app_RX_STARTUP_FSM
+# -- Compiling module rx_gt_app_rx_gt_app_init
+# -- Compiling module rx_gt_app_rx_gt_app_multi_gt
+# -- Compiling module rx_gt_app_rx_gt_app_sync_block
+# -- Compiling module rx_gt_app_rx_gt_app_sync_block_0
+# -- Compiling module rx_gt_app_rx_gt_app_sync_block_1
+# -- Compiling module rx_gt_app_rx_gt_app_sync_block_2
+# -- Compiling module rx_gt_app_rx_gt_app_sync_block_3
+# -- Compiling module rx_gt_app_rx_gt_app_sync_block_4
+# -- Compiling module rx_gt_app_rx_gt_app_sync_block_5
+# -- Compiling module glbl
+# -- Compiling module rx_gt_app_support
+# -- Compiling module gt_app_TB
+# 
+# Top level modules:
+# 	gt_app_RX_STARTUP_FSM
+# 	glbl
+# 	gt_app_TB
+# End time: 20:54:31 on Jun 03,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 20:54:31 on Jun 03,2026
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 20:54:31 on Jun 03,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.sim/sim_1/behav/modelsim'
+Program launched (PID=5492)
+set_property is_enabled false [get_files  c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/imports/example_design/gt_app_gt_frame_check.v]
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jun  5 17:16:10 2026...

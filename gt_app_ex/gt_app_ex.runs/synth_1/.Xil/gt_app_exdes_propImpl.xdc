@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:c:/Users/Administrator/Desktop/GT/gt_app_ex/gt_app_ex.srcs/constrs_1/imports/example_design/gt_app_exdes.xdc rfile:../../../gt_app_ex.srcs/constrs_1/imports/example_design/gt_app_exdes.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:87 export:INPUT save:INPUT read:READ} [current_design]
+set_property LOC H5 [get_ports  Q0_CLK0_GTREFCLK_PAD_N_IN ]
+set_property src_info {type:XDC file:1 line:88 export:INPUT save:INPUT read:READ} [current_design]
+set_property LOC H6 [get_ports  Q0_CLK0_GTREFCLK_PAD_P_IN ]
+set_property src_info {type:XDC file:1 line:97 export:INPUT save:INPUT read:READ} [current_design]
+set_property LOC GTXE2_CHANNEL_X0Y0 [get_cells gt_app_support_i/gt_app_init_i/inst/gt_app_i/gt0_gt_app_i/gtxe2_i]
