@@ -19,42 +19,26 @@ module gt_app_exdes # (
     output wire     TXP_OUT
 );
 
-//**************************** Wire Declarations ******************************//
-    //------------------------ GT Wrapper Wires ------------------------------
-    //________________________________________________________________________
-    //________________________________________________________________________
-    //GT0  (X1Y0)
-    //------------------------- Digital Monitor Ports --------------------------
     wire    [7:0]   gt0_dmonitorout_i       ;
-    //------------------------ RX Margin Analysis Ports ------------------------
     wire            gt0_eyescandataerror_i  ;
-    //------------------- Receive Ports - RX Equalizer Ports -------------------
     wire    [6:0]   gt0_rxmonitorout_i      ;
     wire    [1:0]   gt0_rxmonitorsel_i      ;
-    //------------------- TX Initialization and Reset Ports --------------------
     wire            gt0_gttxreset_i         ;
     wire            gt0_txuserrdy_i         ;
-    //---------------- Transmit Ports - TX Data Path interface -----------------
     wire    [31:0]  gt0_txdata_i            ;
-    //-------------- Transmit Ports - TX Driver and OOB signaling --------------
     wire            gt0_gtxtxn_i            ;
     wire            gt0_gtxtxp_i            ;
-    //--------- Transmit Ports - TX Fabric Clock Output Control Ports ----------
     wire            gt0_txoutclk_i          ;
     wire            gt0_txoutclkfabric_i    ;
     wire            gt0_txoutclkpcs_i       ;
-    //----------- Transmit Ports - TX Initialization and Reset Ports -----------
     wire            gt0_txresetdone_i       ;
 
-    //----------------------------- Global Signals -----------------------------
     wire            gt0_tx_system_reset_c   ;
 
-    //--------------------------- User Clocks ---------------------------------
     wire            gt0_txusrclk_i          ; 
     wire            gt0_txusrclk2_i         ; 
     wire            gt0_txmmcm_lock_i       ;
 
-    //--------------------- Frame check/gen Module Signals --------------------
     wire    [15:0]  gt0_txdata_float16_i    ;
     wire    [31:0]  gt0_txdata_float_i      ;
   
@@ -74,42 +58,29 @@ module gt_app_exdes # (
         .gt0_txusrclk_out               (gt0_txusrclk_i             ),
         .gt0_txusrclk2_out              (gt0_txusrclk2_i            ),
 
-        //-------------------------- Channel - DRP Ports  --------------------------
         .gt0_drpaddr_in                 (9'd0                       ), 
         .gt0_drpdi_in                   (16'd0                      ),
         .gt0_drpdo_out                  (                           ),
         .gt0_drpen_in                   (1'b0                       ),
         .gt0_drprdy_out                 (                           ),
         .gt0_drpwe_in                   (1'b0                       ),
-        //------------------------- Digital Monitor Ports --------------------------
         .gt0_dmonitorout_out            (gt0_dmonitorout_i          ),
-        //------------------- RX Initialization and Reset Ports --------------------
         .gt0_eyescanreset_in            (1'b0                       ),
-        //------------------------ RX Margin Analysis Ports ------------------------
         .gt0_eyescandataerror_out       (gt0_eyescandataerror_i     ),
         .gt0_eyescantrigger_in          (1'b0                       ),
-        //------------------- Receive Ports - RX Equalizer Ports -------------------
         .gt0_rxmonitorout_out           (gt0_rxmonitorout_i         ),
         .gt0_rxmonitorsel_in            (2'b00                      ),
-        //----------- Receive Ports - RX Initialization and Reset Ports ------------
         .gt0_gtrxreset_in               (1'b0                       ),
-        //------------------- TX Initialization and Reset Ports --------------------
         .gt0_gttxreset_in               (1'b0                       ),
         .gt0_txuserrdy_in               (1'b1                       ),
-        //---------------- Transmit Ports - TX Data Path interface -----------------
         .gt0_txdata_in                  (gt0_txdata_i               ),
-        //-------------- Transmit Ports - TX Driver and OOB signaling --------------
         .gt0_gtxtxn_out                 (TXN_OUT                    ),
         .gt0_gtxtxp_out                 (TXP_OUT                    ),
-        //--------- Transmit Ports - TX Fabric Clock Output Control Ports ----------
         .gt0_txoutclkfabric_out         (gt0_txoutclkfabric_i       ),
         .gt0_txoutclkpcs_out            (gt0_txoutclkpcs_i          ),
-        //----------- Transmit Ports - TX Initialization and Reset Ports -----------
         .gt0_txresetdone_out            (gt0_txresetdone_i          ),
-        //--------------- Transmit Ports - TX Polarity Control Ports ---------------
         .gt0_txpolarity_in              (1'b0                       ),
 
-    //____________________________COMMON PORTS________________________________
         .gt0_qplllock_out               (                           ),
         .gt0_qpllrefclklost_out         (                           ),
         .gt0_qplloutclk_out             (                           ),
