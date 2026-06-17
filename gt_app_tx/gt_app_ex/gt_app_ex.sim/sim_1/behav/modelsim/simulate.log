@@ -13,20 +13,20 @@
 # //
 # do {gt_app_TB_simulate.do}
 # vsim -voptargs=""+acc"" -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm -lib xil_defaultlib xil_defaultlib.gt_app_TB xil_defaultlib.glbl 
-# Start time: 20:54:37 on Jun 03,2026
+# Start time: 11:38:16 on Jun 17,2026
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Note: (vopt-143) Recognized 1 FSM in module "gt_app_TX_STARTUP_FSM(fast)".
 # Loading work.gt_app_TB(fast)
 # Loading work.gt_app_exdes(fast)
 # Loading work.gt_app_support(fast)
-# Loading work.gt_app_GT_USRCLK_SOURCE(fast)
 # Loading unisims_ver.IBUFDS_GTE2(fast)
+# Loading work.gt_app_GT_USRCLK_SOURCE(fast)
 # Loading work.gt_app_CLOCK_MODULE(fast)
 # Loading unisims_ver.BUFG(fast)
 # Loading unisims_ver.MMCME2_ADV(fast)
+# Loading work.gt_app_common_reset(fast)
 # Loading work.gt_app_common(fast)
 # Loading unisims_ver.GTXE2_COMMON(fast)
-# Loading work.gt_app_common_reset(fast)
 # Loading work.gt_app(fast)
 # Loading work.gt_app_init(fast)
 # Loading work.gt_app_multi_gt(fast)
@@ -36,7 +36,6 @@
 # Loading work.gt_app_sync_block(fast)
 # Loading unisims_ver.FD(fast)
 # Loading unisims_ver.FDRE(fast)
-# Loading unisims_ver.IBUFDS(fast)
 # Loading work.gt_app_GT_FRAME_GEN(fast)
 # Loading work.rx_gt_app_exdes(fast)
 # Loading work.rx_gt_app_support(fast)
@@ -144,29 +143,38 @@
 # Loading work.rx_gt_app_rx_gt_app_multi_gt(fast)
 # Loading work.rx_gt_app_rx_gt_app_GT(fast)
 # Loading unisims_ver.GTXE2_CHANNEL(fast__1)
+# Loading unisims_ver.IBUFDS(fast)
 # Loading work.rx_gt_app_GT_FRAME_CHECK(fast)
 # Loading work.glbl(fast)
 # 1
 # 1
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Administrator  Hostname: DESKTOP-S7U5SIC  ProcessID: 17396
+#           Attempting to use alternate WLF file "./wlftrd9kix".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftrd9kix
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
 # Timing checks are not valid
 # Timing checks are valid
+do E:/work/prj_test/GT/gt_app_tx/gt_app_ex/gt_app_ex.sim/sim_1/behav/modelsim/gt_app_TB_wave.do
 add wave -position insertpoint sim:/gt_app_TB/gt_app_exdes_i/*
+add wave -position insertpoint sim:/gt_app_TB/gt_app_exdes_i/gt_app_support_i/*
+add wave -position insertpoint sim:/gt_app_TB/gt_app_exdes_i/gt_app_support_i/gt_usrclk_source/*
 restart
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
 # Loading work.gt_app_TB(fast)
 # Loading work.gt_app_exdes(fast)
 # Loading work.gt_app_support(fast)
-# Loading work.gt_app_GT_USRCLK_SOURCE(fast)
 # Loading unisims_ver.IBUFDS_GTE2(fast)
+# Loading work.gt_app_GT_USRCLK_SOURCE(fast)
 # Loading work.gt_app_CLOCK_MODULE(fast)
 # Loading unisims_ver.BUFG(fast)
 # Loading unisims_ver.MMCME2_ADV(fast)
+# Loading work.gt_app_common_reset(fast)
 # Loading work.gt_app_common(fast)
 # Loading unisims_ver.GTXE2_COMMON(fast)
-# Loading work.gt_app_common_reset(fast)
 # Loading work.gt_app(fast)
 # Loading work.gt_app_init(fast)
 # Loading work.gt_app_multi_gt(fast)
@@ -176,7 +184,6 @@ restart
 # Loading work.gt_app_sync_block(fast)
 # Loading unisims_ver.FD(fast)
 # Loading unisims_ver.FDRE(fast)
-# Loading unisims_ver.IBUFDS(fast)
 # Loading work.gt_app_GT_FRAME_GEN(fast)
 # Loading work.rx_gt_app_exdes(fast)
 # Loading work.rx_gt_app_support(fast)
@@ -284,25 +291,33 @@ restart
 # Loading work.rx_gt_app_rx_gt_app_multi_gt(fast)
 # Loading work.rx_gt_app_rx_gt_app_GT(fast)
 # Loading unisims_ver.GTXE2_CHANNEL(fast__1)
+# Loading unisims_ver.IBUFDS(fast)
 # Loading work.rx_gt_app_GT_FRAME_CHECK(fast)
 # Loading work.glbl(fast)
 run -all
 # Timing checks are not valid
 # Timing checks are valid
+run -all
+# ------- TEST COMPLETED -------
+# ------- Test Completed Successfully-------
+# ** Note: $stop    : ../../../../gt_app_ex.srcs/sim_1/imports/simulation/gt_app_tb.v(120)
+#    Time: 549 us  Iteration: 0  Instance: /gt_app_TB
+# Break in Module gt_app_TB at ../../../../gt_app_ex.srcs/sim_1/imports/simulation/gt_app_tb.v line 120
+add wave -position insertpoint sim:/gt_app_TB/gt_app_exdes_i/gt_app_support_i/ibufds_instQ0_CLK0/*
 add wave -position insertpoint sim:/gt_app_TB/gt_app_exdes_i/gt_app_support_i/common_reset_i/*
 restart
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
 # Loading work.gt_app_TB(fast)
 # Loading work.gt_app_exdes(fast)
 # Loading work.gt_app_support(fast)
-# Loading work.gt_app_GT_USRCLK_SOURCE(fast)
 # Loading unisims_ver.IBUFDS_GTE2(fast)
+# Loading work.gt_app_GT_USRCLK_SOURCE(fast)
 # Loading work.gt_app_CLOCK_MODULE(fast)
 # Loading unisims_ver.BUFG(fast)
 # Loading unisims_ver.MMCME2_ADV(fast)
+# Loading work.gt_app_common_reset(fast)
 # Loading work.gt_app_common(fast)
 # Loading unisims_ver.GTXE2_COMMON(fast)
-# Loading work.gt_app_common_reset(fast)
 # Loading work.gt_app(fast)
 # Loading work.gt_app_init(fast)
 # Loading work.gt_app_multi_gt(fast)
@@ -312,7 +327,6 @@ restart
 # Loading work.gt_app_sync_block(fast)
 # Loading unisims_ver.FD(fast)
 # Loading unisims_ver.FDRE(fast)
-# Loading unisims_ver.IBUFDS(fast)
 # Loading work.gt_app_GT_FRAME_GEN(fast)
 # Loading work.rx_gt_app_exdes(fast)
 # Loading work.rx_gt_app_support(fast)
@@ -420,6 +434,7 @@ restart
 # Loading work.rx_gt_app_rx_gt_app_multi_gt(fast)
 # Loading work.rx_gt_app_rx_gt_app_GT(fast)
 # Loading unisims_ver.GTXE2_CHANNEL(fast__1)
+# Loading unisims_ver.IBUFDS(fast)
 # Loading work.rx_gt_app_GT_FRAME_CHECK(fast)
 # Loading work.glbl(fast)
 run -all
@@ -427,181 +442,24 @@ run -all
 # Timing checks are valid
 # ------- TEST COMPLETED -------
 # ------- Test Completed Successfully-------
-# ** Note: $stop    : ../../../../gt_app_ex.srcs/sim_1/imports/simulation/gt_app_tb.v(183)
+# ** Note: $stop    : ../../../../gt_app_ex.srcs/sim_1/imports/simulation/gt_app_tb.v(120)
 #    Time: 549 us  Iteration: 0  Instance: /gt_app_TB
-# Break in Module gt_app_TB at ../../../../gt_app_ex.srcs/sim_1/imports/simulation/gt_app_tb.v line 183
-vlog -work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact C:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_common.v
-# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 15:16:20 on Jun 05,2026
-# vlog -reportprogress 300 -work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact C:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_common.v 
-# -- Compiling module gt_app_common
-# 
-# Top level modules:
-# 	gt_app_common
-# End time: 15:16:20 on Jun 05,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.gt_app_TB(fast)
-# Loading work.gt_app_exdes(fast)
-# Loading work.gt_app_support(fast)
-# Loading work.gt_app_GT_USRCLK_SOURCE(fast)
-# Loading unisims_ver.IBUFDS_GTE2(fast)
-# Loading work.gt_app_CLOCK_MODULE(fast)
-# Loading unisims_ver.BUFG(fast)
-# Loading unisims_ver.MMCME2_ADV(fast)
-# Loading work.gt_app_common(fast)
-# Loading unisims_ver.GTXE2_COMMON(fast)
-# Loading work.gt_app_common_reset(fast)
-# Loading work.gt_app(fast)
-# Loading work.gt_app_init(fast)
-# Loading work.gt_app_multi_gt(fast)
-# Loading work.gt_app_GT(fast)
-# Loading unisims_ver.GTXE2_CHANNEL(fast)
-# Loading work.gt_app_TX_STARTUP_FSM(fast)
-# Loading work.gt_app_sync_block(fast)
-# Loading unisims_ver.FD(fast)
-# Loading unisims_ver.FDRE(fast)
-# Loading unisims_ver.IBUFDS(fast)
-# Loading work.gt_app_GT_FRAME_GEN(fast)
-# Loading work.rx_gt_app_exdes(fast)
-# Loading work.rx_gt_app_support(fast)
-# Loading work.rx_gt_app_GT_USRCLK_SOURCE(fast)
-# Loading work.rx_gt_app_common(fast)
-# Loading unisims_ver.GTXE2_COMMON(fast__1)
-# Loading work.rx_gt_app_common_reset(fast)
-# Loading work.rx_gt_app(fast)
-# Loading work.rx_gt_app_rx_gt_app_init(fast)
-# Loading unisims_ver.GND(fast)
-# Loading unisims_ver.LUT5(fast)
-# Loading unisims_ver.LUT5(fast__1)
-# Loading unisims_ver.LUT4(fast)
-# Loading unisims_ver.LUT5(fast__2)
-# Loading unisims_ver.LUT5(fast__3)
-# Loading unisims_ver.LUT5(fast__4)
-# Loading unisims_ver.LUT4(fast__1)
-# Loading unisims_ver.LUT5(fast__5)
-# Loading unisims_ver.CARRY4(fast)
-# Loading work.rx_gt_app_rx_gt_app_RX_STARTUP_FSM(fast)
-# Loading unisims_ver.LUT2(fast)
-# Loading unisims_ver.LUT6(fast)
-# Loading unisims_ver.LUT6(fast__1)
-# Loading unisims_ver.LUT5(fast__6)
-# Loading unisims_ver.LUT5(fast__7)
-# Loading unisims_ver.LUT4(fast__2)
-# Loading unisims_ver.LUT3(fast)
-# Loading unisims_ver.LUT5(fast__8)
-# Loading unisims_ver.LUT6(fast__2)
-# Loading unisims_ver.LUT2(fast__1)
-# Loading unisims_ver.LUT6(fast__3)
-# Loading unisims_ver.LUT5(fast__9)
-# Loading unisims_ver.LUT4(fast__3)
-# Loading unisims_ver.LUT4(fast__4)
-# Loading unisims_ver.LUT4(fast__5)
-# Loading unisims_ver.LUT5(fast__10)
-# Loading unisims_ver.LUT5(fast__11)
-# Loading unisims_ver.LUT5(fast__12)
-# Loading unisims_ver.LUT1(fast)
-# Loading unisims_ver.FDSE(fast)
-# Loading unisims_ver.LUT5(fast__13)
-# Loading unisims_ver.LUT5(fast__14)
-# Loading unisims_ver.LUT2(fast__2)
-# Loading unisims_ver.LUT3(fast__1)
-# Loading unisims_ver.LUT4(fast__6)
-# Loading unisims_ver.LUT5(fast__15)
-# Loading unisims_ver.LUT6(fast__4)
-# Loading unisims_ver.LUT6(fast__5)
-# Loading unisims_ver.LUT2(fast__3)
-# Loading unisims_ver.LUT5(fast__16)
-# Loading unisims_ver.LUT4(fast__7)
-# Loading unisims_ver.LUT6(fast__6)
-# Loading unisims_ver.FDCE(fast)
-# Loading unisims_ver.LUT6(fast__7)
-# Loading unisims_ver.LUT4(fast__8)
-# Loading unisims_ver.LUT5(fast__17)
-# Loading unisims_ver.LUT6(fast__8)
-# Loading unisims_ver.LUT5(fast__18)
-# Loading unisims_ver.LUT3(fast__2)
-# Loading work.rx_gt_app_rx_gt_app_sync_block(fast)
-# Loading work.rx_gt_app_rx_gt_app_sync_block_0(fast)
-# Loading unisims_ver.LUT6(fast__9)
-# Loading unisims_ver.LUT5(fast__19)
-# Loading unisims_ver.LUT6(fast__10)
-# Loading unisims_ver.LUT6(fast__11)
-# Loading unisims_ver.LUT6(fast__12)
-# Loading unisims_ver.LUT6(fast__13)
-# Loading unisims_ver.LUT6(fast__14)
-# Loading unisims_ver.LUT5(fast__20)
-# Loading unisims_ver.LUT6(fast__15)
-# Loading unisims_ver.LUT6(fast__16)
-# Loading unisims_ver.LUT6(fast__17)
-# Loading unisims_ver.LUT3(fast__3)
-# Loading unisims_ver.LUT6(fast__18)
-# Loading unisims_ver.LUT6(fast__19)
-# Loading unisims_ver.LUT6(fast__20)
-# Loading work.rx_gt_app_rx_gt_app_sync_block_1(fast)
-# Loading unisims_ver.LUT6(fast__21)
-# Loading work.rx_gt_app_rx_gt_app_sync_block_2(fast)
-# Loading unisims_ver.LUT6(fast__22)
-# Loading unisims_ver.LUT6(fast__23)
-# Loading unisims_ver.LUT6(fast__24)
-# Loading work.rx_gt_app_rx_gt_app_sync_block_3(fast)
-# Loading work.rx_gt_app_rx_gt_app_sync_block_4(fast)
-# Loading work.rx_gt_app_rx_gt_app_sync_block_5(fast)
-# Loading unisims_ver.LUT4(fast__9)
-# Loading unisims_ver.LUT6(fast__25)
-# Loading unisims_ver.LUT6(fast__26)
-# Loading unisims_ver.LUT6(fast__27)
-# Loading unisims_ver.LUT5(fast__21)
-# Loading unisims_ver.LUT5(fast__22)
-# Loading unisims_ver.LUT4(fast__10)
-# Loading unisims_ver.LUT3(fast__4)
-# Loading unisims_ver.LUT2(fast__4)
-# Loading unisims_ver.LUT6(fast__28)
-# Loading unisims_ver.LUT6(fast__29)
-# Loading unisims_ver.LUT4(fast__11)
-# Loading unisims_ver.LUT6(fast__30)
-# Loading unisims_ver.LUT6(fast__31)
-# Loading unisims_ver.LUT4(fast__12)
-# Loading unisims_ver.LUT5(fast__23)
-# Loading unisims_ver.LUT4(fast__13)
-# Loading unisims_ver.LUT6(fast__32)
-# Loading unisims_ver.FDSE(fast__1)
-# Loading work.rx_gt_app_rx_gt_app_multi_gt(fast)
-# Loading work.rx_gt_app_rx_gt_app_GT(fast)
-# Loading unisims_ver.GTXE2_CHANNEL(fast__1)
-# Loading work.rx_gt_app_GT_FRAME_CHECK(fast)
-# Loading work.glbl(fast)
-add wave -position insertpoint sim:/gt_app_TB/gt_app_exdes_i/gt_app_support_i/common0_i/gtxe2_common_i/*
-run -all
-# Timing checks are not valid
-# Timing checks are valid
+# Break in Module gt_app_TB at ../../../../gt_app_ex.srcs/sim_1/imports/simulation/gt_app_tb.v line 120
+add wave -position insertpoint sim:/gt_app_TB/gt_app_exdes_i/gt_app_support_i/gt_app_init_i/*
 add wave -position insertpoint sim:/gt_app_TB/gt_app_exdes_i/gt_app_support_i/common0_i/*
-add wave -position insertpoint sim:/gt_app_TB/gt_app_exdes_i/gt_app_support_i/gt_usrclk_source/*
-vlog -work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact C:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_gt_usrclk_source.v
-# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 15:25:37 on Jun 05,2026
-# vlog -reportprogress 300 -work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact C:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_gt_usrclk_source.v 
-# -- Compiling module gt_app_GT_USRCLK_SOURCE
-# 
-# Top level modules:
-# 	gt_app_GT_USRCLK_SOURCE
-# End time: 15:25:37 on Jun 05,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-add wave -position insertpoint sim:/gt_app_TB/gt_app_exdes_i/gt_app_support_i/gt_usrclk_source/*
 restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
 # Loading work.gt_app_TB(fast)
 # Loading work.gt_app_exdes(fast)
 # Loading work.gt_app_support(fast)
-# Loading work.gt_app_GT_USRCLK_SOURCE(fast)
 # Loading unisims_ver.IBUFDS_GTE2(fast)
+# Loading work.gt_app_GT_USRCLK_SOURCE(fast)
 # Loading work.gt_app_CLOCK_MODULE(fast)
 # Loading unisims_ver.BUFG(fast)
 # Loading unisims_ver.MMCME2_ADV(fast)
+# Loading work.gt_app_common_reset(fast)
 # Loading work.gt_app_common(fast)
 # Loading unisims_ver.GTXE2_COMMON(fast)
-# Loading work.gt_app_common_reset(fast)
 # Loading work.gt_app(fast)
 # Loading work.gt_app_init(fast)
 # Loading work.gt_app_multi_gt(fast)
@@ -611,7 +469,6 @@ restart
 # Loading work.gt_app_sync_block(fast)
 # Loading unisims_ver.FD(fast)
 # Loading unisims_ver.FDRE(fast)
-# Loading unisims_ver.IBUFDS(fast)
 # Loading work.gt_app_GT_FRAME_GEN(fast)
 # Loading work.rx_gt_app_exdes(fast)
 # Loading work.rx_gt_app_support(fast)
@@ -719,12 +576,9 @@ restart
 # Loading work.rx_gt_app_rx_gt_app_multi_gt(fast)
 # Loading work.rx_gt_app_rx_gt_app_GT(fast)
 # Loading unisims_ver.GTXE2_CHANNEL(fast__1)
+# Loading unisims_ver.IBUFDS(fast)
 # Loading work.rx_gt_app_GT_FRAME_CHECK(fast)
 # Loading work.glbl(fast)
-# Warning in wave window restart: (vish-4014) No objects found matching '/gt_app_TB/gt_app_exdes_i/gt_app_support_i/gt_usrclk_source/tied_to_ground_i'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/gt_app_TB/gt_app_exdes_i/gt_app_support_i/gt_usrclk_source/tied_to_vcc_i'. 
 run -all
 # Timing checks are not valid
 # Timing checks are valid
-# End time: 17:16:18 on Jun 05,2026, Elapsed time: 44:21:41
-# Errors: 2, Warnings: 0

@@ -8,7 +8,8 @@ module gt_app_support # (
     parameter EXAMPLE_SIM_GTRESET_SPEEDUP            = "TRUE",     // Simulation setting for GT SecureIP model
     parameter STABLE_CLOCK_PERIOD                    = 10         //Period of the stable clock driving this state-machine, unit is [ns]
 ) (
-    input           soft_reset_tx_in            ,
+    input           clk                         ,
+    input           rst                         ,
     input           dont_reset_on_data_error_in ,
     input           q0_clk0_gtrefclk_pad_n_in   ,
     input           q0_clk0_gtrefclk_pad_p_in   ,
@@ -45,8 +46,7 @@ module gt_app_support # (
     output          gt0_qplllock_out            ,
     output          gt0_qpllrefclklost_out      ,
     output          gt0_qplloutclk_out          ,
-    output          gt0_qplloutrefclk_out       ,
-    input           sysclk_in
+    output          gt0_qplloutrefclk_out
 );
 
 
@@ -77,11 +77,10 @@ module gt_app_support # (
     wire            gt0_qplllock_i          ;
     wire            gt0_qpllrefclklost_i    ;
     wire            gt0_qpllreset_i         ;
-    wire            gt0_qpllreset_t         ;
+    wire            w_rst                   ;
     wire            gt0_qplloutclk_i        ;
     wire            gt0_qplloutrefclk_i     ;
 
-    wire            sysclk_in_i             ;
     wire            gt0_tx_system_reset_c   ;
     wire            gt0_rx_system_reset_c   ;
     wire            GTTXRESET_IN            ;
@@ -95,7 +94,7 @@ module gt_app_support # (
     wire            gt0_txmmcm_lock_i       ;
     wire            gt0_txmmcm_reset_i      ;
 
-    wire            q0_clk0_refclk_i        ;
+    wire            q0_clk0_refclk_i    /*synthesis syn_noclockbuf=1*/        ;
 
     wire            commonreset_i           ;
     wire            commonreset_t           ;
@@ -105,7 +104,7 @@ module gt_app_support # (
  
     assign gt0_qplllock_out         = gt0_qplllock_i;
     assign gt0_qpllrefclklost_out   = gt0_qpllrefclklost_i;
-    assign gt0_qpllreset_t          = commonreset_i | gt0_qpllreset_i;
+    assign w_rst                    = commonreset_i | gt0_qpllreset_i;
      
     assign gt0_qplloutclk_out       = gt0_qplloutclk_i;
     assign gt0_qplloutrefclk_out    = gt0_qplloutrefclk_i;
@@ -113,25 +112,30 @@ module gt_app_support # (
     assign gt0_txusrclk_out         = gt0_txusrclk_i; 
     assign gt0_txusrclk2_out        = gt0_txusrclk2_i;
 
-    assign  sysclk_in_i             = sysclk_in;
 
+    // 外部参考时钟差分转单端
+    IBUFDS_GTE2 ibufds_instQ0_CLK0 (
+        .O               (q0_clk0_refclk_i          ),
+        .ODIV2           (                          ),
+        .CEB             (1'b0                      ),  // 低有效
+        .I               (q0_clk0_gtrefclk_pad_p_in ),
+        .IB              (q0_clk0_gtrefclk_pad_n_in )
+    );
 
+    // GT_Channel输出的TXOUTCLK经mmcm生成用户时钟usrclk和usrclk2
     gt_app_GT_USRCLK_SOURCE gt_usrclk_source (
-        .Q0_CLK0_GTREFCLK_PAD_P_IN  (q0_clk0_gtrefclk_pad_p_in  ),
-        .Q0_CLK0_GTREFCLK_PAD_N_IN  (q0_clk0_gtrefclk_pad_n_in  ),
         .GT0_TXOUTCLK_IN            (gt0_txoutclk_i             ),
         .GT0_TX_MMCM_RESET_IN       (gt0_txmmcm_reset_i         ),
         .GT0_TXUSRCLK_OUT           (gt0_txusrclk_i             ),
         .GT0_TXUSRCLK2_OUT          (gt0_txusrclk2_i            ),
-        .GT0_TXCLK_LOCK_OUT         (gt0_txmmcm_lock_i          ),
-        .Q0_CLK0_GTREFCLK_OUT       (q0_clk0_refclk_i           )
+        .GT0_TXCLK_LOCK_OUT         (gt0_txmmcm_lock_i          )
     );
 
-    gt_app_common_reset #  (
+    gt_app_common_reset # (
         .STABLE_CLOCK_PERIOD        (STABLE_CLOCK_PERIOD        )  // Period of the stable clock driving this state-machine, unit is [ns]
     ) common_reset_i (      
-        .STABLE_CLOCK               (sysclk_in_i                ),  //Stable Clock, either a stable clock from the PCB
-        .SOFT_RESET                 (soft_reset_tx_in           ),  //User Reset, can be pulled any time
+        .STABLE_CLOCK               (clk                        ),  //Stable Clock, either a stable clock from the PCB
+        .SOFT_RESET                 (rst                        ),  //User Reset, can be pulled any time
         .COMMON_RESET               (commonreset_i              )   //output Reset QPLL
     );
 
@@ -142,19 +146,19 @@ module gt_app_support # (
         .QPLLREFCLKSEL_IN           (3'b001                     ),
         .GTREFCLK0_IN               (q0_clk0_refclk_i           ),
         .GTREFCLK1_IN               (1'b0                       ),
-        .QPLLLOCKDETCLK_IN          (sysclk_in_i                ),
+        .QPLLLOCKDETCLK_IN          (clk                        ),
         .QPLLLOCK_OUT               (gt0_qplllock_i             ),
         .QPLLOUTCLK_OUT             (gt0_qplloutclk_i           ),
         .QPLLOUTREFCLK_OUT          (gt0_qplloutrefclk_i        ),
         .QPLLREFCLKLOST_OUT         (gt0_qpllrefclklost_i       ),
-        .QPLLRESET_IN               (gt0_qpllreset_t            )
+        .QPLLRESET_IN               (w_rst                      )
     );
 
 
     gt_app gt_app_init_i
     (
-        .sysclk_in                      (sysclk_in_i                ),
-        .soft_reset_tx_in               (soft_reset_tx_in           ),
+        .sysclk_in                      (clk                        ),
+        .soft_reset_tx_in               (rst                        ),
         .dont_reset_on_data_error_in    (dont_reset_on_data_error_in),
         .gt0_tx_mmcm_lock_in            (gt0_txmmcm_lock_i          ),
         .gt0_tx_mmcm_reset_out          (gt0_txmmcm_reset_i         ),
@@ -163,12 +167,13 @@ module gt_app_support # (
         .gt0_data_valid_in              (gt0_data_valid_in          ),
 
         .gt0_drpaddr_in                 (gt0_drpaddr_in             ), // input wire [8:0] gt0_drpaddr_in
-        .gt0_drpclk_in                  (sysclk_in_i                ), // input wire sysclk_in_i
+        .gt0_drpclk_in                  (clk                        ), // input wire clk
         .gt0_drpdi_in                   (gt0_drpdi_in               ), // input wire [15:0] gt0_drpdi_in
         .gt0_drpdo_out                  (gt0_drpdo_out              ), // output wire [15:0] gt0_drpdo_out
         .gt0_drpen_in                   (gt0_drpen_in               ), // input wire gt0_drpen_in
         .gt0_drprdy_out                 (gt0_drprdy_out             ), // output wire gt0_drprdy_out
         .gt0_drpwe_in                   (gt0_drpwe_in               ), // input wire gt0_drpwe_in
+
         .gt0_dmonitorout_out            (gt0_dmonitorout_out        ), // output wire [7:0] gt0_dmonitorout_out
         .gt0_eyescanreset_in            (gt0_eyescanreset_in        ), // input wire gt0_eyescanreset_in
         .gt0_eyescandataerror_out       (gt0_eyescandataerror_out   ), // output wire gt0_eyescandataerror_out

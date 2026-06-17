@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jun 14 19:43:28 2026
+# Process ID: 17512
+# Current directory: E:/work/prj_test/GT/gt_app_tx/gt_app_ex
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2864 E:\work\prj_test\GT\gt_app_tx\gt_app_ex\gt_app_ex.xpr
+# Log file: E:/work/prj_test/GT/gt_app_tx/gt_app_ex/vivado.log
+# Journal file: E:/work/prj_test/GT/gt_app_tx/gt_app_ex\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/work/prj_test/GT/gt_app_tx/gt_app_ex/gt_app_ex.xpr
+update_compile_order -fileset sources_1
+set_property compxlib.modelsim_compiled_library_dir C:/modeltech64_10.7/vivado_lib [current_project]
+launch_simulation -install_path C:/modeltech64_10.7/win64
+launch_simulation -install_path C:/modeltech64_10.7/win64
+launch_simulation -install_path C:/modeltech64_10.7/win64

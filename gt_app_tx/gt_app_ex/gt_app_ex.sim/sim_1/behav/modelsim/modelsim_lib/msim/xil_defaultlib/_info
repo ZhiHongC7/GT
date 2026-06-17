@@ -7,739 +7,780 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dc:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.sim/sim_1/behav/modelsim
+Z0 dE:/work/prj_test/GT/gt_app_tx/gt_app_ex/gt_app_ex.sim/sim_1/behav/modelsim
 T_opt
-!s110 1780644364
-VmUI:f1M2zH4Dl=Ccn^>Zm3
-04 9 4 work gt_app_TB fast 0
-04 4 4 work glbl fast 0
-=5-30c599ad6994-6a227a0b-1f2-30ac
-o-quiet -auto_acc_if_foreign -work xil_defaultlib -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm +acc
-Z1 tCvgOpt 0
+!s110 1781580732
+VDUQ[56m5KmhT4RACFzkM_1
+Z1 04 9 4 work gt_app_TB fast 0
+Z2 04 4 4 work glbl fast 0
+=5-30c599ad6994-6a30c3ba-3b9-43f4
+Z3 o-quiet -auto_acc_if_foreign -work xil_defaultlib -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm +acc
+Z4 tCvgOpt 0
 n@_opt
-OL;O;10.7;67
+Z5 OL;O;10.7;67
+R0
+T_opt1
+!s110 1781667499
+VUUk45cCHJe;aRf?BHZZJ33
+R1
+R2
+=1-30c599ad6994-6a3216aa-40-2678
+R3
+R4
+n@_opt1
+R5
 vglbl
-Z2 !s110 1780491271
+Z6 !s110 1781667491
 !i10b 1
 !s100 7cd<?T0KPANS9PBoRj:BY2
 INdU5f[;Bb^Y=SUnL>A9=o3
-Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z7 VDg1SIo80bB@j0V0VzS_@n1
 R0
 w1544155481
 8glbl.v
 Fglbl.v
 L0 6
-Z4 OL;L;10.7;67
+Z8 OL;L;10.7;67
 r1
 !s85 0
 31
-Z5 !s108 1780491271.000000
+Z9 !s108 1781667491.000000
 !s107 glbl.v|
 !s90 -work|xil_defaultlib|glbl.v|
 !i113 0
-Z6 o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R1
+Z10 o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
 vgt_app
-R2
+Z11 !s10a 1780898906
+Z12 !s110 1781437492
 !i10b 1
 !s100 B62f0QX=ll7I7F1lB0FL_2
 I<fm0HW?6V:@8FbXQa9nmJ2
-R3
+R7
 R0
-Z7 w1780490971
+Z13 w1780898906
 8../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app.v
 F../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app.v
 L0 73
-R4
+R8
 r1
 !s85 0
 31
-R5
-Z8 !s107 ../../../../gt_app_ex.srcs/sim_1/imports/simulation/gt_app_tb.v|../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/support/rx_gt_app_support.v|../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app_sim_netlist.v|../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/support/rx_gt_app_gt_usrclk_source.v|../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/rx_gt_app_gt_frame_check.v|../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/rx_gt_app_exdes.v|../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/support/rx_gt_app_common_reset.v|../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/support/rx_gt_app_common.v|../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_support.v|../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_gt_usrclk_source.v|../../../../gt_app_ex.srcs/sources_1/imports/example_design/gt_app_gt_frame_gen.v|../../../../gt_app_ex.srcs/sources_1/imports/example_design/gt_app_exdes.v|../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_common_reset.v|../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_common.v|../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_clock_module.v|../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app.v|../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app/example_design/gt_app_sync_block.v|../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app_multi_gt.v|../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app_gt.v|../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app_init.v|../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app/example_design/gt_app_rx_startup_fsm.v|../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app/example_design/gt_app_tx_startup_fsm.v|
-Z9 !s90 -64|-incr|-work|xil_defaultlib|../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app/example_design/gt_app_tx_startup_fsm.v|../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app/example_design/gt_app_rx_startup_fsm.v|../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app_init.v|../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app_gt.v|../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app_multi_gt.v|../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app/example_design/gt_app_sync_block.v|../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app.v|../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_clock_module.v|../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_common.v|../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_common_reset.v|../../../../gt_app_ex.srcs/sources_1/imports/example_design/gt_app_exdes.v|../../../../gt_app_ex.srcs/sources_1/imports/example_design/gt_app_gt_frame_gen.v|../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_gt_usrclk_source.v|../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_support.v|../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/support/rx_gt_app_common.v|../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/support/rx_gt_app_common_reset.v|../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/rx_gt_app_exdes.v|../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/rx_gt_app_gt_frame_check.v|../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/support/rx_gt_app_gt_usrclk_source.v|../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app_sim_netlist.v|../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/support/rx_gt_app_support.v|../../../../gt_app_ex.srcs/sim_1/imports/simulation/gt_app_tb.v|
+Z14 !s108 1781437492.000000
+Z15 !s107 ../../../../gt_app_ex.srcs/sim_1/imports/simulation/gt_app_tb.v|../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/support/rx_gt_app_support.v|../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app_sim_netlist.v|../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/support/rx_gt_app_gt_usrclk_source.v|../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/rx_gt_app_gt_frame_check.v|../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/rx_gt_app_exdes.v|../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/support/rx_gt_app_common_reset.v|../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/support/rx_gt_app_common.v|../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_support.v|../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_gt_usrclk_source.v|../../../../gt_app_ex.srcs/sources_1/imports/example_design/gt_app_gt_frame_gen.v|../../../../gt_app_ex.srcs/sources_1/imports/example_design/gt_app_exdes.v|../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_common_reset.v|../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_common.v|../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_clock_module.v|../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app.v|../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app/example_design/gt_app_sync_block.v|../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app_multi_gt.v|../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app_gt.v|../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app_init.v|../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app/example_design/gt_app_rx_startup_fsm.v|../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app/example_design/gt_app_tx_startup_fsm.v|
+Z16 !s90 -64|-incr|-work|xil_defaultlib|../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app/example_design/gt_app_tx_startup_fsm.v|../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app/example_design/gt_app_rx_startup_fsm.v|../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app_init.v|../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app_gt.v|../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app_multi_gt.v|../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app/example_design/gt_app_sync_block.v|../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app.v|../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_clock_module.v|../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_common.v|../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_common_reset.v|../../../../gt_app_ex.srcs/sources_1/imports/example_design/gt_app_exdes.v|../../../../gt_app_ex.srcs/sources_1/imports/example_design/gt_app_gt_frame_gen.v|../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_gt_usrclk_source.v|../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_support.v|../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/support/rx_gt_app_common.v|../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/support/rx_gt_app_common_reset.v|../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/rx_gt_app_exdes.v|../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/rx_gt_app_gt_frame_check.v|../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/support/rx_gt_app_gt_usrclk_source.v|../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app_sim_netlist.v|../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/support/rx_gt_app_support.v|../../../../gt_app_ex.srcs/sim_1/imports/simulation/gt_app_tb.v|
 !i113 0
-R6
-R1
+R10
+R4
 vgt_app_CLOCK_MODULE
-R2
+!s10a 1781254155
+R12
 !i10b 1
-!s100 KXBjaHO`iN1n4b03l`KbK2
-IbaM0meUS4d^AZ50W?ddCz0
-R3
+!s100 <[N7BCL7gS5ioQJXZTFAh0
+ISS^HC[4U<h=ATHPW>j2RB2
+R7
 R0
-Z10 w1780491060
+w1781254155
 8../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_clock_module.v
 F../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_clock_module.v
-Z11 L0 69
-R4
+L0 4
+R8
 r1
 !s85 0
 31
-R5
-R8
-R9
+R14
+R15
+R16
 !i113 0
-R6
-R1
+R10
+R4
 ngt_app_@c@l@o@c@k_@m@o@d@u@l@e
 vgt_app_common
-!s110 1780643780
+!s10a 1781254006
+R12
 !i10b 1
-!s100 Uj=ce1mzIG[SXdXJaKYRN2
-I9?IN5CYl^X6AjIkhGDRnl0
-R3
+!s100 F^l>mRV08D5L0MA]LSQ0z3
+IF]Jf>NP:RH7ZD_fNKMFnI2
+R7
 R0
-w1780643756
-8C:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_common.v
-FC:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_common.v
-R11
-R4
+w1781254006
+8../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_common.v
+F../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_common.v
+L0 6
+R8
 r1
 !s85 0
 31
-!s108 1780643780.000000
-!s107 C:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_common.v|
-!s90 -reportprogress|300|-work|xil_defaultlib|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|C:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_common.v|
+R14
+R15
+R16
 !i113 0
-R6
-R1
-vgt_app_common_reset
-R2
-!i10b 1
-!s100 BZQai:jmMHQOSKR@b2;d41
-I2^GPIzg_O`_l0h<Xz7hR=0
-R3
-R0
 R10
+R4
+vgt_app_common_reset
+!s10a 1781254020
+R12
+!i10b 1
+!s100 UF>^Ae?_6X=m:L:mOQl0]3
+I@?IdN0d[NWhW0mI_el>6F2
+R7
+R0
+w1781254020
 8../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_common_reset.v
 F../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_common_reset.v
-Z12 L0 74
-R4
+L0 5
+R8
 r1
 !s85 0
 31
-R5
-R8
-R9
+R14
+R15
+R16
 !i113 0
-R6
-R1
-vgt_app_exdes
-R2
-!i10b 1
-!s100 HN:b;OQzATXchHaaicV2h3
-I=]kMG;E<7ofC[==kKK29M0
-R3
-R0
 R10
+R4
+vgt_app_exdes
+!s10a 1781437610
+!s110 1781437618
+!i10b 1
+!s100 <4kn@3`lCUnX5]Q8`IT;J0
+ISVoak^Fooj0N@DK0i_@661
+R7
+R0
+w1781437610
 8../../../../gt_app_ex.srcs/sources_1/imports/example_design/gt_app_exdes.v
 F../../../../gt_app_ex.srcs/sources_1/imports/example_design/gt_app_exdes.v
-Z13 L0 70
-R4
+L0 7
+R8
 r1
 !s85 0
 31
-R5
-R8
-R9
+!s108 1781437618.000000
+R15
+R16
 !i113 0
-R6
-R1
+R10
+R4
 vgt_app_GT
-R2
+R11
+R12
 !i10b 1
 !s100 W9GVzdb[lEAXEF8bOjBid1
 IYSRJW55=LEhbBgWf1LLld0
-R3
+R7
 R0
-Z14 w1780490970
+R13
 8../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app_gt.v
 F../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app_gt.v
-Z15 L0 71
-R4
+Z17 L0 71
+R8
 r1
 !s85 0
 31
-R5
-R8
-R9
+R14
+R15
+R16
 !i113 0
-R6
-R1
+R10
+R4
 ngt_app_@g@t
 vgt_app_GT_FRAME_GEN
-R2
+R11
+R12
 !i10b 1
 !s100 3_9U98EM5D3Y2lA_FBhh=2
 Id;_7E>gn[HPdAFTgh@GkY3
-R3
+R7
 R0
-R10
+R13
 8../../../../gt_app_ex.srcs/sources_1/imports/example_design/gt_app_gt_frame_gen.v
 F../../../../gt_app_ex.srcs/sources_1/imports/example_design/gt_app_gt_frame_gen.v
-R11
-R4
+Z18 L0 69
+R8
 r1
 !s85 0
 31
-R5
-R8
-R9
+R14
+R15
+R16
 !i113 0
-R6
-R1
+R10
+R4
 ngt_app_@g@t_@f@r@a@m@e_@g@e@n
 vgt_app_GT_USRCLK_SOURCE
-!s110 1780644337
+R6
 !i10b 1
-!s100 Gb7[PCgL4nKV]h2VcVNo:0
-I`C2:E:l2Dd=7C7S3n4UzL2
-R3
+!s100 @R3YXL7QzePDhbjbDBA7R0
+IO33PoNO2hb1Si::2VUS]H1
+R7
 R0
-w1780636676
-8C:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_gt_usrclk_source.v
-FC:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_gt_usrclk_source.v
-R13
-R4
+w1781665990
+8../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_gt_usrclk_source.v
+F../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_gt_usrclk_source.v
+L0 7
+R8
 r1
 !s85 0
 31
-!s108 1780644337.000000
-!s107 C:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_gt_usrclk_source.v|
-!s90 -reportprogress|300|-work|xil_defaultlib|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|C:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_gt_usrclk_source.v|
+R9
+R15
+R16
 !i113 0
-R6
-R1
+R10
+R4
 ngt_app_@g@t_@u@s@r@c@l@k_@s@o@u@r@c@e
 vgt_app_init
-R2
+R11
+R12
 !i10b 1
 !s100 gnA_LMZ0SCf_fze5j4=KH1
 IPHQLJKTPMTML_n`chFK0k2
-R3
+R7
 R0
-R14
+R13
 8../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app_init.v
 F../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app_init.v
-R15
-R4
+R17
+R8
 r1
 !s85 0
 31
-R5
-R8
-R9
+R14
+R15
+R16
 !i113 0
-R6
-R1
+R10
+R4
 vgt_app_multi_gt
-R2
+R11
+R12
 !i10b 1
 !s100 kfS^1o<kehZ7Bl^KQg4cE0
 If[cUBg99>]WnPgLJ;z_Hf0
-R3
+R7
 R0
-R14
+R13
 8../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app_multi_gt.v
 F../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app_multi_gt.v
-R13
-R4
+Z19 L0 70
+R8
 r1
 !s85 0
 31
-R5
-R8
-R9
+R14
+R15
+R16
 !i113 0
-R6
-R1
+R10
+R4
 vgt_app_RX_STARTUP_FSM
-R2
+R11
+R12
 !i10b 1
 !s100 7K?L>4ndgm5AkSY=ce9Xz0
 I1Pc0EWQNU:bTT^KDHLMd:2
-R3
+R7
 R0
-R14
+R13
 8../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app/example_design/gt_app_rx_startup_fsm.v
 F../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app/example_design/gt_app_rx_startup_fsm.v
-Z16 L0 94
-R4
+Z20 L0 94
+R8
 r1
 !s85 0
 31
-R5
-R8
-R9
+R14
+R15
+R16
 !i113 0
-R6
-R1
+R10
+R4
 ngt_app_@r@x_@s@t@a@r@t@u@p_@f@s@m
 vgt_app_support
-R2
+R6
 !i10b 1
-!s100 CS[R>l@BN80egEfMQh=f60
-IeiPHQV3J228Z[Z81_F:j80
-R3
+!s100 mQM=6?SohRJGYKoZ0G<C=2
+IGKQ?T:gk[2Pgih[Yj>`5H1
+R7
 R0
-R10
+w1781591569
 8../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_support.v
 F../../../../gt_app_ex.srcs/sources_1/imports/example_design/support/gt_app_support.v
-R13
-R4
+L0 7
+R8
 r1
 !s85 0
 31
-R5
-R8
 R9
+R15
+R16
 !i113 0
-R6
-R1
+R10
+R4
 vgt_app_sync_block
-R2
+R11
+R12
 !i10b 1
 !s100 1:ZDgF:^HXiVJ_4>0Ykcd1
 IgR`Pi0W>8Y_:7iZ5RSO112
-R3
-R0
 R7
+R0
+R13
 8../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app/example_design/gt_app_sync_block.v
 F../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app/example_design/gt_app_sync_block.v
 L0 78
-R4
+R8
 r1
 !s85 0
 31
-R5
-R8
-R9
+R14
+R15
+R16
 !i113 0
-R6
-R1
+R10
+R4
 vgt_app_TB
-R2
+R6
 !i10b 1
-!s100 hlOR<2;eoXO4KYLlHGj>:3
-I]MK40dP0G=U<R?`jI@8NR3
-R3
+!s100 SNTS]UR_a<`L8iFFE^Weh1
+I]_S[V@LHQ6o;0[EJ_ngHD2
+R7
 R0
-w1780491061
+w1781580690
 8../../../../gt_app_ex.srcs/sim_1/imports/simulation/gt_app_tb.v
 F../../../../gt_app_ex.srcs/sim_1/imports/simulation/gt_app_tb.v
-L0 66
-R4
+L0 3
+R8
 r1
 !s85 0
 31
-R5
-R8
 R9
+R15
+R16
 !i113 0
-R6
-R1
+R10
+R4
 ngt_app_@t@b
 vgt_app_TX_STARTUP_FSM
-R2
+R11
+R12
 !i10b 1
 !s100 NfUI[o=JC1`mQiTj_66[M0
 ITNjR;dJYB`Y?QGIS;FY9R3
-R3
+R7
 R0
-w1780490969
+R13
 8../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app/example_design/gt_app_tx_startup_fsm.v
 F../../../../gt_app_ex.srcs/sources_1/ip/gt_app/gt_app/example_design/gt_app_tx_startup_fsm.v
-R16
-R4
+R20
+R8
 r1
 !s85 0
 31
-R5
-R8
-R9
+R14
+R15
+R16
 !i113 0
-R6
-R1
+R10
+R4
 ngt_app_@t@x_@s@t@a@r@t@u@p_@f@s@m
 vrx_gt_app
-R2
+R11
+R12
 !i10b 1
 !s100 aHL1VN@>4]WEYklhXGd;@0
 I[F1Wm_h:Ga2GdklIoz5UT3
-R3
+R7
 R0
-Z17 w1780491094
-Z18 8../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app_sim_netlist.v
-Z19 F../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app_sim_netlist.v
+R13
+Z21 8../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app_sim_netlist.v
+Z22 F../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app_sim_netlist.v
 L0 17
-R4
+R8
 r1
 !s85 0
 31
-R5
-R8
-R9
+R14
+R15
+R16
 !i113 0
-R6
-R1
+R10
+R4
 vrx_gt_app_common
-R2
+R11
+R12
 !i10b 1
 !s100 <c7RdJjV^DWTN7EcfZl`^0
 I4R72hcbkEO1c>BAYe`[0B3
-R3
+R7
 R0
-Z20 w1780491098
+R13
 8../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/support/rx_gt_app_common.v
 F../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/support/rx_gt_app_common.v
-R11
-R4
+R18
+R8
 r1
 !s85 0
 31
-R5
-R8
-R9
+R14
+R15
+R16
 !i113 0
-R6
-R1
+R10
+R4
 vrx_gt_app_common_reset
-R2
+R11
+R12
 !i10b 1
 !s100 _1aX]P4n7BXVQnFDHYh8U1
 Il:[N_k0B:cj?J31QaZ@V:0
-R3
+R7
 R0
-R20
+R13
 8../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/support/rx_gt_app_common_reset.v
 F../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/support/rx_gt_app_common_reset.v
-R12
-R4
+L0 74
+R8
 r1
 !s85 0
 31
-R5
-R8
-R9
+R14
+R15
+R16
 !i113 0
-R6
-R1
+R10
+R4
 vrx_gt_app_exdes
-R2
+R11
+R12
 !i10b 1
 !s100 1:;T=V4Ef0jg1d3[z<YR`0
 IHb]ec=3`zIXa=;OJDblLe0
-R3
+R7
 R0
-Z21 w1780491099
+R13
 8../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/rx_gt_app_exdes.v
 F../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/rx_gt_app_exdes.v
-R13
-R4
+R19
+R8
 r1
 !s85 0
 31
-R5
-R8
-R9
+R14
+R15
+R16
 !i113 0
-R6
-R1
+R10
+R4
 vrx_gt_app_GT_FRAME_CHECK
-R2
+R11
+R12
 !i10b 1
 !s100 mHNf1<>3Y]K3:hO?:?<`f0
 IeCcG0MI9dH:REF0cak15P2
-R3
+R7
 R0
-R21
+R13
 8../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/rx_gt_app_gt_frame_check.v
 F../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/rx_gt_app_gt_frame_check.v
-R11
-R4
+R18
+R8
 r1
 !s85 0
 31
-R5
-R8
-R9
+R14
+R15
+R16
 !i113 0
-R6
-R1
+R10
+R4
 nrx_gt_app_@g@t_@f@r@a@m@e_@c@h@e@c@k
 vrx_gt_app_GT_USRCLK_SOURCE
-R2
+R11
+R12
 !i10b 1
 !s100 a1nl;9;h<@MN9cV[?z:HA1
 IWf>4edQXT1cBQWI8zB^cS2
-R3
+R7
 R0
-R20
+R13
 8../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/support/rx_gt_app_gt_usrclk_source.v
 F../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/support/rx_gt_app_gt_usrclk_source.v
 L0 68
-R4
+R8
 r1
 !s85 0
 31
-R5
-R8
-R9
+R14
+R15
+R16
 !i113 0
-R6
-R1
+R10
+R4
 nrx_gt_app_@g@t_@u@s@r@c@l@k_@s@o@u@r@c@e
 vrx_gt_app_rx_gt_app_GT
-R2
+R11
+R12
 !i10b 1
 !s100 U`MaUX@^95e5=_G1F9a5:0
 IY4iEQVLMAGL]4Y:X4A<bX0
-R3
+R7
 R0
-R17
-R18
-R19
+R13
+R21
+R22
 L0 183
-R4
+R8
 r1
 !s85 0
 31
-R5
-R8
-R9
+R14
+R15
+R16
 !i113 0
-R6
-R1
+R10
+R4
 nrx_gt_app_rx_gt_app_@g@t
 vrx_gt_app_rx_gt_app_init
-R2
+R11
+R12
 !i10b 1
 !s100 67<U4djQ]P4JoiWZCVa172
 I`eDknF]GYmk0RJmW?KT_X2
-R3
+R7
 R0
-R17
-R18
-R19
+R13
+R21
+R22
 L0 3074
-R4
+R8
 r1
 !s85 0
 31
-R5
-R8
-R9
+R14
+R15
+R16
 !i113 0
-R6
-R1
+R10
+R4
 vrx_gt_app_rx_gt_app_multi_gt
-R2
+R11
+R12
 !i10b 1
 !s100 :Oicgbe3SfIBlg8B7J;4_0
 ICFUhD1RQT?W0>B3kW9SfO0
-R3
+R7
 R0
-R17
-R18
-R19
+R13
+R21
+R22
 L0 4002
-R4
+R8
 r1
 !s85 0
 31
-R5
-R8
-R9
+R14
+R15
+R16
 !i113 0
-R6
-R1
+R10
+R4
 vrx_gt_app_rx_gt_app_RX_STARTUP_FSM
-R2
+R11
+R12
 !i10b 1
 !s100 lhW9bY;j2LULeK7l94]N92
 ITDcPz6VMI?eeRGXb0@dZz1
-R3
+R7
 R0
-R17
-R18
-R19
+R13
+R21
+R22
 L0 772
-R4
+R8
 r1
 !s85 0
 31
-R5
-R8
-R9
+R14
+R15
+R16
 !i113 0
-R6
-R1
+R10
+R4
 nrx_gt_app_rx_gt_app_@r@x_@s@t@a@r@t@u@p_@f@s@m
 vrx_gt_app_rx_gt_app_sync_block
-R2
+R11
+R12
 !i10b 1
 !s100 :9XolGKLVkmINM=MkbSI`0
 IloMd?BUO3m:e>@nC;RJVM0
-R3
+R7
 R0
-R17
-R18
-R19
+R13
+R21
+R22
 L0 4125
-R4
+R8
 r1
 !s85 0
 31
-R5
-R8
-R9
+R14
+R15
+R16
 !i113 0
-R6
-R1
+R10
+R4
 vrx_gt_app_rx_gt_app_sync_block_0
-R2
+R11
+R12
 !i10b 1
 !s100 GXiYWm`QklecOPf?Y4Qn@2
 IKloVBZDV>Yg>1EF[UnEHK3
-R3
+R7
 R0
-R17
-R18
-R19
+R13
+R21
+R22
 L0 4217
-R4
+R8
 r1
 !s85 0
 31
-R5
-R8
-R9
+R14
+R15
+R16
 !i113 0
-R6
-R1
+R10
+R4
 vrx_gt_app_rx_gt_app_sync_block_1
-R2
+R11
+R12
 !i10b 1
 !s100 HHGFB7cY`bO67G4J;Rmma1
 I=;PLVBL4oTO5;@<>32VUF3
-R3
+R7
 R0
-R17
-R18
-R19
+R13
+R21
+R22
 L0 4557
-R4
+R8
 r1
 !s85 0
 31
-R5
-R8
-R9
+R14
+R15
+R16
 !i113 0
-R6
-R1
+R10
+R4
 vrx_gt_app_rx_gt_app_sync_block_2
-R2
+R11
+R12
 !i10b 1
 !s100 0mB03j]A5DUQ9[jA:l6<03
 I]kQ6^Q3lQ`4YRD]mF2mF51
-R3
+R7
 R0
-R17
-R18
-R19
+R13
+R21
+R22
 L0 4674
-R4
+R8
 r1
 !s85 0
 31
-R5
-R8
-R9
+R14
+R15
+R16
 !i113 0
-R6
-R1
+R10
+R4
 vrx_gt_app_rx_gt_app_sync_block_3
-R2
+R11
+R12
 !i10b 1
 !s100 B;nLZ:C:d5G3^Kz5cSF=F3
 I^>XDenJoP5:UkHZ:V[S8J2
-R3
+R7
 R0
-R17
-R18
-R19
+R13
+R21
+R22
 L0 4826
-R4
+R8
 r1
 !s85 0
 31
-R5
-R8
-R9
+R14
+R15
+R16
 !i113 0
-R6
-R1
+R10
+R4
 vrx_gt_app_rx_gt_app_sync_block_4
-R2
+R11
+R12
 !i10b 1
 !s100 >R1RZ?RTUzLK00S^_0PW`1
 I`f9O<>`8Q3c7O3?2c@2CN1
-R3
+R7
 R0
-R17
-R18
-R19
+R13
+R21
+R22
 L0 4918
-R4
+R8
 r1
 !s85 0
 31
-R5
-R8
-R9
+R14
+R15
+R16
 !i113 0
-R6
-R1
+R10
+R4
 vrx_gt_app_rx_gt_app_sync_block_5
-R2
+R11
+R12
 !i10b 1
 !s100 OOhLfTl_>n;f;e?D<MZ5V0
 InTeJ;^?OjM:fe@hFe75J^1
-R3
+R7
 R0
-R17
-R18
-R19
+R13
+R21
+R22
 L0 5010
-R4
+R8
 r1
 !s85 0
 31
-R5
-R8
-R9
+R14
+R15
+R16
 !i113 0
-R6
-R1
+R10
+R4
 vrx_gt_app_support
-R2
+R11
+R12
 !i10b 1
 !s100 12`<DmkJ0N@^e]WjUCd723
 I=obPV7FInj9EB1WCNeYUT3
-R3
+R7
 R0
-R20
+R13
 8../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/support/rx_gt_app_support.v
 F../../../../gt_app_ex.srcs/sources_1/ip/rx_gt_app/rx_gt_app/example_design/support/rx_gt_app_support.v
-R13
-R4
+R19
+R8
 r1
 !s85 0
 31
-R5
-R8
-R9
+R14
+R15
+R16
 !i113 0
-R6
-R1
+R10
+R4

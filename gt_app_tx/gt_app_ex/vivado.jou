@@ -2,19 +2,14 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Jun  3 20:51:02 2026
-# Process ID: 13324
-# Current directory: c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex
-# Command line: vivado.exe -notrace -source c:/Users/Administrator/Desktop/GT/gt_app/gt_app.srcs/sources_1/ip/gt_app/gt_app_ex.tcl
-# Log file: c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/vivado.log
-# Journal file: c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex\vivado.jou
+# Start of session at: Wed Jun 17 11:35:55 2026
+# Process ID: 17612
+# Current directory: E:/work/prj_test/GT/gt_app_tx/gt_app_ex
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21736 E:\work\prj_test\GT\gt_app_tx\gt_app_ex\gt_app_ex.xpr
+# Log file: E:/work/prj_test/GT/gt_app_tx/gt_app_ex/vivado.log
+# Journal file: E:/work/prj_test/GT/gt_app_tx/gt_app_ex\vivado.jou
 #-----------------------------------------------------------
 start_gui
-source c:/Users/Administrator/Desktop/GT/gt_app/gt_app.srcs/sources_1/ip/gt_app/gt_app_ex.tcl -notrace
+open_project E:/work/prj_test/GT/gt_app_tx/gt_app_ex/gt_app_ex.xpr
 update_compile_order -fileset sources_1
-launch_simulation
-source gt_app_TB.tcl
-close_sim
-set_property target_simulator ModelSim [current_project]
 launch_simulation -install_path C:/modeltech64_10.7/win64
-set_property is_enabled false [get_files  c:/Users/Administrator/Desktop/GT/gt_app_tx/gt_app_ex/gt_app_ex.srcs/sources_1/imports/example_design/gt_app_gt_frame_check.v]

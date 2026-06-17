@@ -45,8 +45,9 @@ module gt_app_exdes # (
     gt_app_support # (
         .EXAMPLE_SIM_GTRESET_SPEEDUP    (EXAMPLE_SIM_GTRESET_SPEEDUP),
         .STABLE_CLOCK_PERIOD            (STABLE_CLOCK_PERIOD        )
-    ) gt_app_support_i (        
-        .soft_reset_tx_in               (1'b0                       ),
+    ) gt_app_support_i (
+        .clk                            (DRPCLK_IN                  ),
+        .rst                            (1'b0                       ),
         .dont_reset_on_data_error_in    (1'b0                       ),
         .q0_clk0_gtrefclk_pad_n_in      (Q0_CLK0_GTREFCLK_PAD_N_IN  ),
         .q0_clk0_gtrefclk_pad_p_in      (Q0_CLK0_GTREFCLK_PAD_P_IN  ),
@@ -84,10 +85,13 @@ module gt_app_exdes # (
         .gt0_qplllock_out               (                           ),
         .gt0_qpllrefclklost_out         (                           ),
         .gt0_qplloutclk_out             (                           ),
-        .gt0_qplloutrefclk_out          (                           ),
-        .sysclk_in                      (DRPCLK_IN                  )
+        .gt0_qplloutrefclk_out          (                           )
     );
     
+    reg gt0_txfsmresetdone_r ;
+    reg gt0_txfsmresetdone_r2;
+
+
     always @(posedge  gt0_txusrclk2_i or negedge gt0_txfsmresetdone_i) begin
         if (!gt0_txfsmresetdone_i) begin
             gt0_txfsmresetdone_r    <=   `DLY 1'b0;
